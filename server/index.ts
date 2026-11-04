@@ -59,13 +59,14 @@ app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
   });
 });
 
-const startServer = async () => {
-  await connectDB();
-  app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
-  });
-};
-
-startServer();
+if (!process.env.VERCEL) {
+  const startServer = async () => {
+    await connectDB();
+    app.listen(PORT, () => {
+      console.log(`Server listening on port ${PORT}`);
+    });
+  };
+  startServer();
+}
 
 export default app;
