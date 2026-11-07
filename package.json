@@ -7,7 +7,7 @@
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:client": "vite",
     "dev:server": "tsx watch server/index.ts",
-    "build:server": "esbuild api/index.ts --bundle --platform=node --target=node18 --format=esm --outfile=api/index.js --packages=external",
+    "build:server": "esbuild server/serverless.ts --bundle --platform=node --target=node18 --format=esm --outfile=api/index.js --packages=external",
     "build": "npm run build:server && tsc -b && vite build",
     "lint": "tsc -b --noEmit",
     "preview": "vite preview",

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import app from '../api/index';
+import app from '../server/serverless';
 
 describe('Vercel Serverless API handler', () => {
   it('should export a valid express application instance', () => {

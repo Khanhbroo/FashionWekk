@@ -1,4 +1,4 @@
-// api/index.ts
+// server/serverless.ts
 import express from "express";
 import cors from "cors";
 import dotenv2 from "dotenv";
@@ -5576,7 +5576,7 @@ router3.put("/:id", updateCoupon);
 router3.delete("/:id", deleteCoupon);
 var couponRoutes_default = router3;
 
-// api/index.ts
+// server/serverless.ts
 dotenv2.config();
 var app = express();
 app.use(cors({
@@ -5610,7 +5610,7 @@ app.use((err, _req, res, _next) => {
     message: err.message || "Internal Server Error"
   });
 });
-var index_default = app;
+var serverless_default = app;
 export {
-  index_default as default
+  serverless_default as default
 };

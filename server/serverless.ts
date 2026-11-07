@@ -1,10 +1,10 @@
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { connectDB } from '../server/config/db';
-import productRoutes from '../server/routes/productRoutes';
-import orderRoutes from '../server/routes/orderRoutes';
-import couponRoutes from '../server/routes/couponRoutes';
+import { connectDB } from './config/db';
+import productRoutes from './routes/productRoutes';
+import orderRoutes from './routes/orderRoutes';
+import couponRoutes from './routes/couponRoutes';
 
 dotenv.config();
 
