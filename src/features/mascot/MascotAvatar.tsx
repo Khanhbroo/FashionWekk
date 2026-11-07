@@ -105,11 +105,28 @@ export const MascotAvatar: React.FC<MascotAvatarProps> = ({
           <rect x="96" y="275" width="16" height="24" rx="3" fill="#111318" stroke="#3A3F4D" strokeWidth="1.5" />
           <rect x="208" y="275" width="16" height="24" rx="3" fill="#111318" stroke="#3A3F4D" strokeWidth="1.5" />
           <path d="M 100 299 Q 120 320 115 330" fill="none" stroke="#CCFF00" strokeWidth="2" />
-          {equipped.bottom && (
+          {equipped.bottom?.images?.[0] ? (
+            <g id="bottom-artwork-patch">
+              <clipPath id="bottomPatchClip">
+                <rect x="146" y="280" width="28" height="28" rx="6" />
+              </clipPath>
+              <rect x="145" y="279" width="30" height="30" rx="7" fill="#0A0A0C" stroke="#00E5FF" strokeWidth="1.5" />
+              <image
+                href={equipped.bottom.images[0]}
+                x="146"
+                y="280"
+                width="28"
+                height="28"
+                preserveAspectRatio="xMidYMid slice"
+                clipPath="url(#bottomPatchClip)"
+              />
+              <rect x="146" y="280" width="28" height="28" rx="6" fill="none" stroke="rgba(0, 229, 255, 0.4)" strokeWidth="1" />
+            </g>
+          ) : equipped.bottom ? (
             <text x="160" y="315" fill="#94A3B8" fontSize="8" fontFamily="JetBrains Mono" textAnchor="middle">
               CARGO-X
             </text>
-          )}
+          ) : null}
         </g>
 
         <g
