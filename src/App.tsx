@@ -13,8 +13,11 @@ import { ProductDetailPage } from './features/products/ProductDetailPage';
 import { CartDrawer } from './features/cart/CartDrawer';
 import { MascotDressUpDrawer } from './features/mascot/MascotDressUpDrawer';
 import { MysteryWheelModal } from './features/gamification/MysteryWheelModal';
+import { ThemeCustomizerModal } from './components/common/ThemeCustomizerModal';
 import { AdminDashboard } from './features/admin/AdminDashboard';
 import { animateStaggeredReveal } from './utils/animations';
+import { useThemeStore, applyThemeToDOM } from './stores/themeStore';
+import { preloadCollectionImages } from './utils/imageOptimizer';
 
 type ViewMode = 'home' | 'product' | 'collection' | 'admin';
 
@@ -34,6 +37,8 @@ export const App: React.FC = () => {
 
   const [category, setCategory] = useState('all');
   const [collection, setCollection] = useState('all');
+  const [season, setSeason] = useState('all');
+  const [mascotSlot, setMascotSlot] = useState('all');
   const [search, setSearch] = useState('');
   const [flashSale, setFlashSale] = useState(false);
   const [sortBy, setSortBy] = useState('featured');
@@ -44,6 +49,11 @@ export const App: React.FC = () => {
   const dropsSectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const { mode, gradientId } = useThemeStore.getState();
+    applyThemeToDOM(mode, gradientId);
+  }, []);
+
+  useEffect(() => {
     if (dropsSectionRef.current && currentView === 'home') {
       animateStaggeredReveal('.product-reveal-item', dropsSectionRef.current);
     }
@@ -51,10 +61,21 @@ export const App: React.FC = () => {
 
   const fetchCatalogAll = async () => {
     try {
-      const res = await fetch('/api/products?limit=100');
+      const res = await fetch('/api/products?limit=200');
       const data = await res.json();
-      if (data.success) {
+      if (data.success && Array.isArray(data.data)) {
         setAllProductsCatalog(data.data);
+        if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+          window.requestIdleCallback(() => {
+            const leadImages = data.data.slice(0, 8).map((p: Product) => p.images[0]);
+            preloadCollectionImages(leadImages, 8);
+          });
+        } else {
+          setTimeout(() => {
+            const leadImages = data.data.slice(0, 8).map((p: Product) => p.images[0]);
+            preloadCollectionImages(leadImages, 8);
+          }, 1000);
+        }
       }
     } catch (err) {
       console.error('Failed to preload catalog', err);
@@ -175,6 +196,8 @@ export const App: React.FC = () => {
       const params = new URLSearchParams();
       if (category !== 'all') params.append('category', category);
       if (collection !== 'all') params.append('collection', collection);
+      if (season !== 'all') params.append('season', season);
+      if (mascotSlot !== 'all') params.append('mascotSlot', mascotSlot);
       if (search) params.append('search', search);
       if (flashSale) params.append('flashSale', 'true');
 
@@ -213,15 +236,17 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [category, collection, search, flashSale, sortBy, itemsPerPage]);
+  }, [category, collection, season, mascotSlot, search, flashSale, sortBy, itemsPerPage]);
 
   useEffect(() => {
     fetchProducts();
-  }, [category, collection, search, flashSale, sortBy, currentPage, itemsPerPage]);
+  }, [category, collection, season, mascotSlot, search, flashSale, sortBy, currentPage, itemsPerPage]);
 
   const handleResetFilters = () => {
     setCategory('all');
     setCollection('all');
+    setSeason('all');
+    setMascotSlot('all');
     setSearch('');
     setFlashSale(false);
     setSortBy('featured');
@@ -237,7 +262,7 @@ export const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8F9FD] text-[#0F172A] flex flex-col font-sans selection:bg-[#FF5722] selection:text-white">
+    <div className="min-h-screen text-[#0A0A0C] dark:text-white flex flex-col font-sans selection:bg-[#D4FF00] selection:text-black">
       <FlashSaleBanner />
 
       <Navbar
@@ -274,20 +299,24 @@ export const App: React.FC = () => {
             onOpenWheel={() => setIsWheelOpen(true)}
           />
 
-          <main ref={dropsSectionRef} className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 py-6 sm:py-8 pb-28 sm:pb-8 flex-1 w-full">
+          <main
+            ref={dropsSectionRef}
+            id="drops-main-section"
+            className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 py-6 sm:py-8 pb-28 sm:pb-8 flex-1 w-full"
+          >
             <CollectionBanner
               collection={collection}
               onClear={() => setCollection('all')}
               onExploreCollection={navigateToCollection}
             />
 
-            <div className="flex flex-col sm:flex-row items-baseline justify-between gap-2 border-b border-slate-200/80 pb-4 mb-6">
+            <div className="flex flex-col sm:flex-row items-baseline justify-between gap-2 border-b border-[#0A0A0C]/15 pb-4 mb-6">
               <div>
-                <h2 className="font-display text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-                  CURATED <span className="text-[#FF5722]">CARTOON DROPS</span>
+                <h2 className="font-display text-2xl sm:text-3xl font-black italic tracking-tight uppercase text-[#0A0A0C]">
+                  CURATED <span className="underline decoration-[#D4FF00] decoration-4">CARTOON DROPS</span>
                 </h2>
-                <p className="mt-1 text-xs text-slate-500 font-medium">
-                  Exclusive {totalItems} heavyweight 350-500 GSM cartoon pop-art collector drops from MongoDB Atlas • Directed by KhanhBro
+                <p className="mt-1 text-xs text-slate-600 font-mono font-medium">
+                  Exclusive {totalItems} heavyweight 350-500 GSM cartoon pop-art collector drops • Directed by KhanhBro
                 </p>
               </div>
             </div>
@@ -297,6 +326,10 @@ export const App: React.FC = () => {
               onSelectCategory={setCategory}
               collection={collection}
               onSelectCollection={setCollection}
+              season={season}
+              onSelectSeason={setSeason}
+              mascotSlot={mascotSlot}
+              onSelectMascotSlot={setMascotSlot}
               search={search}
               onSearchChange={setSearch}
               flashSale={flashSale}
@@ -340,6 +373,7 @@ export const App: React.FC = () => {
         isOpen={isWheelOpen}
         onClose={() => setIsWheelOpen(false)}
       />
+      <ThemeCustomizerModal />
 
       <Footer />
     </div>

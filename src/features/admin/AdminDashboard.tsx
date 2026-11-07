@@ -111,9 +111,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToStore })
         collectionName: 'KhanhBro Signature Drip',
         description: `Premium cartoon streetwear drop with ${newGsm} GSM construction and dynamic pop-art graphics.`,
         images: [
-          'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80',
+          'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png',
+          'https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png',
+          'https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png',
         ],
         colors: ['Onyx Black', 'Sunset Coral'],
         sizes: ['S', 'M', 'L', 'XL'],

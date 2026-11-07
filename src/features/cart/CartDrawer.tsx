@@ -115,7 +115,7 @@ export const CartDrawer: React.FC = () => {
                   Tracking Code: <strong className="text-[#FF5722] font-mono">{confirmedOrder}</strong>
                 </p>
                 <p className="mt-3 text-xs text-slate-500 max-w-xs">
-                  We've received your order and stored it into MongoDB Atlas. You can track this in the Admin Portal.
+                  We've received your collector order and our atelier has begun express packaging. A confirmation has been dispatched.
                 </p>
                 <button
                   onClick={() => {

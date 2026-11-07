@@ -100,14 +100,14 @@ export const CouponAppliedModal: React.FC<CouponAppliedModalProps> = ({
         {/* Top Atelier Badge */}
         <div className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 text-white px-3 py-1 text-[11px] font-mono font-bold tracking-widest uppercase mb-4">
           <span className="h-1.5 w-1.5 rounded-full bg-[#D4FF00]" />
-          <span>COLLUSION ATELIER // COUPON ACTIVATED</span>
+          <span>FASHIONWEKK ATELIER // COUPON ACTIVATED</span>
         </div>
 
         <h3 className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight text-slate-900 leading-none">
           DISCOUNT UNLOCKED
         </h3>
         <p className="mt-1.5 text-xs text-slate-600 font-medium">
-          Your promotional voucher was verified against the FashionWekk MongoDB vault and successfully applied to your bag.
+          Your promotional voucher was verified and successfully applied to your bag.
         </p>
 
         {/* Highlight Card */}
