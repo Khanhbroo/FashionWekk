@@ -19,6 +19,7 @@ export interface Product {
   mascotAsset?: string;
   featured?: boolean;
   collectionName?: string;
+  season?: 'SS26' | 'FW26' | 'All-Season';
   createdAt?: string;
 }
 

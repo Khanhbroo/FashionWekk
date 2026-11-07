@@ -4,174 +4,125 @@ import { connectDB } from './config/db';
 import Product from './models/Product';
 import Coupon from './models/Coupon';
 import Order from './models/Order';
+import cloudinaryCatalog from './data/cloudinary_catalog.json';
 
 dotenv.config();
 
-const FASHION_IMAGE_PAIRS = {
-  hoodies: [
-    {
-      front: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1527718641255-324f8e2d0421?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?auto=format&fit=crop&w=800&q=80',
-    },
-  ],
+const catalog = cloudinaryCatalog as Record<string, string>;
+
+// Masterpiece Cloudinary CDN assets with automatic WebP and AVIF optimization
+export const CLOUDINARY_MASTERPIECES: Record<string, string> = {
+  'KhanhBro Signature Drip': catalog['fashionwekk/masterpieces/khanhbro_hero_signature_drip'],
+  'Cyber Toon Glitch': catalog['fashionwekk/masterpieces/cyber_toon_glitch_hero'],
+  'Mecha Bot Evolution': catalog['fashionwekk/masterpieces/mecha_bot_evolution'],
+  'Street Ronin Brush': catalog['fashionwekk/masterpieces/street_ronin_brush'],
+  'Chibi Harajuku Splash': catalog['fashionwekk/masterpieces/chibi_harajuku_splash'],
+  'Pixel Quest 8-Bit': catalog['fashionwekk/masterpieces/pixel_quest_8bit'],
+  'Solar Flare Washed': catalog['fashionwekk/masterpieces/solar_flare_washed'],
+  'Synth Wave Sunset': catalog['fashionwekk/masterpieces/synth_wave_sunset'],
+  'Demon Mask Pop Art': catalog['fashionwekk/masterpieces/demon_mask_popart'],
+  'Rogue Clan Distressed': catalog['fashionwekk/masterpieces/rogue_clan_distressed'],
+  'KhanhBro Classic Drip': catalog['fashionwekk/masterpieces/gemini_pro_sample_hoodie'],
+};
+
+// Generate back lookbook framing view using dynamic Cloudinary fill
+export function getBackView(url: string): string {
+  if (!url) return '';
+  return url.replace('/f_auto,q_auto/', '/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/');
+}
+
+// Generate macro fabric weave and silicone ink detail view using dynamic Cloudinary crop
+export function getDetailView(url: string): string {
+  if (!url) return '';
+  return url.replace('/f_auto,q_auto/', '/c_crop,w_600,h_600,g_center/f_auto,q_auto/');
+}
+
+// Category fallback pools from Cloudinary assets
+const IMAGE_SETS_SS26 = {
   tees: [
-    {
-      front: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1527719327859-c6ce80353573?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1622445268045-8f258a69e7f4?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1618354691792-d1d42acfd860?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1618354691229-88d47f285158?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80',
-    },
+    catalog['fashionwekk/mascot/mascot_cyber_glitch_tee'],
+    catalog['fashionwekk/masterpieces/chibi_harajuku_splash'],
+    catalog['fashionwekk/masterpieces/pixel_quest_8bit'],
+    catalog['fashionwekk/masterpieces/solar_flare_washed'],
+    catalog['fashionwekk/masterpieces/synth_wave_sunset'],
+    catalog['fashionwekk/tops/top_cyber_toon_acid_hoodie'],
   ],
   bottoms: [
-    {
-      front: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1551854838-212c50b4c184?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80',
-    },
+    catalog['fashionwekk/bottoms/bottom_harajuku_pleated_shorts'],
+    catalog['fashionwekk/bottoms/bottom_pixel_8bit_sweatpants'],
+    catalog['fashionwekk/bottoms/bottom_mecha_parachute_track'],
+    catalog['fashionwekk/mascot/mascot_mecha_cargo'],
+    catalog['fashionwekk/masterpieces/rogue_clan_distressed'],
+    catalog['fashionwekk/masterpieces/chibi_harajuku_splash'],
   ],
   outerwear: [
-    {
-      front: 'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-    },
+    catalog['fashionwekk/tops/top_liquid_drip_crop_windbreaker'],
+    catalog['fashionwekk/tops/top_pixel_retro_bomber'],
+    catalog['fashionwekk/masterpieces/cyber_toon_glitch_hero'],
+    catalog['fashionwekk/masterpieces/mecha_bot_evolution'],
   ],
   accessories: [
-    {
-      front: 'https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-    },
-  ],
-  collectibles: [
-    {
-      front: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      front: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80',
-      detail: 'https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?auto=format&fit=crop&w=800&q=80',
-    },
+    catalog['fashionwekk/headwear/headwear_flame_washed_cap'],
+    catalog['fashionwekk/headwear/headwear_harajuku_bucket_hat'],
+    catalog['fashionwekk/headwear/headwear_pixel_quest_beanie'],
+    catalog['fashionwekk/accessories/accessory_neon_acrylic_ring_set'],
+    catalog['fashionwekk/accessories/accessory_chrome_cuban_chain'],
+    catalog['fashionwekk/accessories/accessory_pixel_companion_plush'],
   ],
 };
 
-export const COLLECTIONS = [
-  { id: 'cyber-toon', name: 'Cyber Toon Glitch', tag: 'PopGlitch', gsm: 460 },
-  { id: 'mecha-bot', name: 'Mecha Bot Evolution', tag: 'MechaBot', gsm: 480 },
-  { id: 'rogue-clan', name: 'Rogue Clan Distressed', tag: 'RogueClan', gsm: 450 },
-  { id: 'chibi-splash', name: 'Chibi Harajuku Splash', tag: 'ChibiDrip', gsm: 380 },
-  { id: 'street-ronin', name: 'Street Ronin Brush', tag: 'RoninBrush', gsm: 500 },
-  { id: 'pixel-quest', name: 'Pixel Quest 8-Bit', tag: 'PixelArt', gsm: 360 },
-  { id: 'solar-flare', name: 'Solar Flare Washed', tag: 'SolarFlare', gsm: 420 },
-  { id: 'synth-sunset', name: 'Synth Wave Sunset', tag: 'SynthWave', gsm: 350 },
-  { id: 'demon-mask', name: 'Demon Mask Pop Art', tag: 'DemonPop', gsm: 460 },
-  { id: 'khanhbro-drip', name: 'KhanhBro Signature Drip', tag: 'KhanhBro', gsm: 480 },
+const IMAGE_SETS_FW26 = {
+  hoodies: [
+    catalog['fashionwekk/mascot/mascot_liquid_drip_hoodie'],
+    catalog['fashionwekk/tops/top_cyber_toon_acid_hoodie'],
+    catalog['fashionwekk/tops/top_ronin_brush_kimono_hoodie'],
+    catalog['fashionwekk/masterpieces/khanhbro_hero_signature_drip'],
+    catalog['fashionwekk/masterpieces/demon_mask_popart'],
+    catalog['fashionwekk/masterpieces/street_ronin_brush'],
+  ],
+  bottoms: [
+    catalog['fashionwekk/bottoms/bottom_cyber_cargo_pants'],
+    catalog['fashionwekk/bottoms/bottom_distressed_graffiti_denim'],
+    catalog['fashionwekk/bottoms/bottom_ronin_hakama_joggers'],
+    catalog['fashionwekk/mascot/mascot_mecha_cargo'],
+    catalog['fashionwekk/masterpieces/rogue_clan_distressed'],
+  ],
+  outerwear: [
+    catalog['fashionwekk/tops/top_mecha_varsity_jacket'],
+    catalog['fashionwekk/tops/top_solar_flare_puffer'],
+    catalog['fashionwekk/masterpieces/mecha_bot_evolution'],
+    catalog['fashionwekk/masterpieces/cyber_toon_glitch_hero'],
+  ],
+  accessories: [
+    catalog['fashionwekk/headwear/headwear_cyber_visor_helmet'],
+    catalog['fashionwekk/headwear/headwear_demon_oni_balaclava'],
+    catalog['fashionwekk/headwear/headwear_ronin_straw_kasa'],
+    catalog['fashionwekk/accessories/accessory_tactical_chest_rig'],
+    catalog['fashionwekk/accessories/accessory_demon_skate_deck'],
+    catalog['fashionwekk/accessories/accessory_spray_can_holster'],
+  ],
+};
+
+const IMAGE_SETS_COLLECTIBLES = [
+  catalog['fashionwekk/collectibles/collectible_khanhbro_vinyl_toy'],
+  catalog['fashionwekk/accessories/accessory_demon_skate_deck'],
+  catalog['fashionwekk/collectibles/collectible_demon_resin_bust'],
+  catalog['fashionwekk/accessories/accessory_pixel_companion_plush'],
+  catalog['fashionwekk/accessories/accessory_spray_can_holster'],
 ];
 
-export const COLLECTION_HERO_ASSETS: Record<string, string> = {
-  'KhanhBro Signature Drip': '/assets/images/khanhbro_hoodie_sample.jpg',
-  'Cyber Toon Glitch': '/assets/images/cyber_toon_glitch.jpg',
-  'Mecha Bot Evolution': '/assets/images/mecha_bot_evolution.jpg',
-  'Street Ronin Brush': '/assets/images/street_ronin_brush.jpg',
-  'Chibi Harajuku Splash': '/assets/images/chibi_harajuku_splash.jpg',
-  'Pixel Quest 8-Bit': '/assets/images/pixel_quest_8bit.jpg',
-  'Solar Flare Washed': '/assets/images/solar_flare_washed.jpg',
-  'Synth Wave Sunset': '/assets/images/synth_wave_sunset.jpg',
-  'Demon Mask Pop Art': '/assets/images/demon_mask_popart.jpg',
-  'Rogue Clan Distressed': '/assets/images/rogue_clan_distressed.jpg',
-};
+export const COLLECTIONS = [
+  { id: 'chibi-splash', name: 'Chibi Harajuku Splash', tag: 'ChibiDrip', gsm: 260, season: 'SS26' as const },
+  { id: 'pixel-quest', name: 'Pixel Quest 8-Bit', tag: 'PixelArt', gsm: 250, season: 'SS26' as const },
+  { id: 'solar-flare', name: 'Solar Flare Washed', tag: 'SolarFlare', gsm: 270, season: 'SS26' as const },
+  { id: 'synth-sunset', name: 'Synth Wave Sunset', tag: 'SynthWave', gsm: 240, season: 'SS26' as const },
+  { id: 'cyber-toon', name: 'Cyber Toon Glitch', tag: 'PopGlitch', gsm: 460, season: 'FW26' as const },
+  { id: 'mecha-bot', name: 'Mecha Bot Evolution', tag: 'MechaBot', gsm: 480, season: 'FW26' as const },
+  { id: 'street-ronin', name: 'Street Ronin Brush', tag: 'RoninBrush', gsm: 500, season: 'FW26' as const },
+  { id: 'demon-mask', name: 'Demon Mask Pop Art', tag: 'DemonPop', gsm: 470, season: 'FW26' as const },
+  { id: 'rogue-clan', name: 'Rogue Clan Distressed', tag: 'RogueClan', gsm: 450, season: 'FW26' as const },
+  { id: 'khanhbro-drip', name: 'KhanhBro Signature Drip', tag: 'KhanhBro', gsm: 490, season: 'FW26' as const },
+];
 
 const COLORS_POOL = [
   ['Onyx Black', 'Sunset Coral'],
@@ -233,61 +184,59 @@ const seedDatabase = async () => {
     ];
     await Coupon.insertMany(coupons);
 
-    console.log('Seeding products...');
+    console.log('Building 100 products catalog (50 SS26 + 50 FW26)...');
     const productsToInsert = [];
+    const now = Date.now();
+    let overallIndex = 1;
 
-    const categoryBreakdown = [
-      { category: 'hoodies', count: 26, basePrice: 85, slot: 'top' },
-      { category: 'tees', count: 26, basePrice: 42, slot: 'top' },
-      { category: 'bottoms', count: 20, basePrice: 78, slot: 'bottom' },
-      { category: 'outerwear', count: 14, basePrice: 135, slot: 'top' },
-      { category: 'accessories', count: 10, basePrice: 32, slot: 'head' },
-      { category: 'collectibles', count: 4, basePrice: 65, slot: 'accessory' },
+    // Spring Summer 2026 Season Batch (50 items)
+    const ssCollections = COLLECTIONS.filter(c => c.season === 'SS26');
+    const ssBreakdown = [
+      { category: 'tees' as const, count: 20, basePrice: 42, slot: 'top' as const, prefix: 'Oversize Pop Art Graphic Tee' },
+      { category: 'bottoms' as const, count: 15, basePrice: 68, slot: 'bottom' as const, prefix: 'Tactical Parachute Street Shorts' },
+      { category: 'outerwear' as const, count: 10, basePrice: 95, slot: 'top' as const, prefix: 'Packable UV Shield Windbreaker' },
+      { category: 'accessories' as const, count: 5, basePrice: 32, slot: 'head' as const, prefix: 'Distressed 5-Panel Street Cap' },
     ];
 
-    let overallIndex = 1;
-    const now = Date.now();
-
-    for (const group of categoryBreakdown) {
-      const imgSet = FASHION_IMAGE_PAIRS[group.category as keyof typeof FASHION_IMAGE_PAIRS];
-
+    for (const group of ssBreakdown) {
+      const categoryPool = IMAGE_SETS_SS26[group.category];
       for (let i = 0; i < group.count; i++) {
-        const collection = COLLECTIONS[(overallIndex - 1) % COLLECTIONS.length];
+        const collection = ssCollections[(overallIndex - 1) % ssCollections.length];
         const colorSet = COLORS_POOL[(overallIndex - 1) % COLORS_POOL.length];
-        const isFlashSale = overallIndex % 4 === 0;
-        const discountPercent = isFlashSale ? 25 : 0;
-        const price = Math.round(group.basePrice + (overallIndex % 7) * 4);
-        const originalPrice = isFlashSale ? Math.round(price * 1.33) : price;
-
-        const photoObj = imgSet[i % imgSet.length];
-        const heroAsset = COLLECTION_HERO_ASSETS[collection.name];
-        const frontImage = heroAsset || photoObj.front;
-        const title = `${collection.name} ${group.category.charAt(0).toUpperCase() + group.category.slice(1, -1)} #${overallIndex}`;
-        const itemCreatedAt = new Date(now - (100 - overallIndex) * 3600000);
+        const isFlashSale = overallIndex % 5 === 0;
+        const discountPercent = isFlashSale ? 20 : 0;
+        const price = Math.round(group.basePrice + (overallIndex % 6) * 5);
+        const originalPrice = isFlashSale ? Math.round(price * 1.25) : price;
+        const categoryFallback = categoryPool[i % categoryPool.length];
+        const heroMasterpiece = CLOUDINARY_MASTERPIECES[collection.name];
+        const frontImage = heroMasterpiece || categoryFallback;
+        const isAccessoryItem = group.category === 'accessories' && i >= 3;
+        const currentSlot = isAccessoryItem ? ('accessory' as const) : group.slot;
+        const currentPrefix = isAccessoryItem ? 'Chunky Y2K Neon Jewelry Set' : group.prefix;
+        const title = `${collection.name} ${currentPrefix} #${overallIndex}`;
+        const itemCreatedAt = new Date(now - (105 - overallIndex) * 3600000);
 
         productsToInsert.push({
           title,
           price,
           originalPrice,
           category: group.category,
+          season: 'SS26',
           collectionName: collection.name,
-          description: `Limited edition ${group.category} from the ${collection.name} capsule. Engineered with heavyweight ${collection.gsm} GSM combed French terry/cotton. Double-needle stitch construction, distressed pop wash, and high-density cartoon graphic prints.`,
-          images: [frontImage, photoObj.back, photoObj.detail],
+          description: `Spring/Summer 2026 edition from the ${collection.name} capsule. Crafted with breathable ${collection.gsm} GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.`,
+          images: [frontImage, getBackView(frontImage), getDetailView(frontImage)],
           colors: colorSet,
-          sizes:
-            group.category === 'accessories' || group.category === 'collectibles'
-              ? ['One Size']
-              : ['S', 'M', 'L', 'XL', 'XXL'],
+          sizes: group.category === 'accessories' ? ['One Size'] : ['S', 'M', 'L', 'XL', 'XXL'],
           gsm: collection.gsm,
-          stock: Math.floor(15 + Math.random() * 45),
+          stock: Math.floor(18 + Math.random() * 40),
           isFlashSale,
           discountPercent,
-          tags: [collection.tag, 'Streetwear', 'FashionWekk', 'KhanhBro', 'ToonDrip', 'Cartoon', group.category],
-          rating: Number((4.6 + (overallIndex % 5) * 0.08).toFixed(1)),
-          reviewCount: Math.floor(18 + Math.random() * 95),
-          mascotSlot: group.slot,
-          mascotAsset: `asset_${group.category}_${(overallIndex % 5) + 1}`,
-          featured: overallIndex <= 12,
+          tags: [collection.tag, 'SS26', 'SpringSummer', 'Streetwear', 'FashionWekk', 'KhanhBro', group.category],
+          rating: Number((4.7 + (overallIndex % 4) * 0.08).toFixed(1)),
+          reviewCount: Math.floor(22 + Math.random() * 80),
+          mascotSlot: currentSlot,
+          mascotAsset: `asset_ss_${group.category}_${(overallIndex % 5) + 1}`,
+          featured: overallIndex <= 8,
           createdAt: itemCreatedAt,
           updatedAt: itemCreatedAt,
         });
@@ -296,8 +245,101 @@ const seedDatabase = async () => {
       }
     }
 
+    // Fall Winter 2026 Season Batch (50 items)
+    const fwCollections = COLLECTIONS.filter(c => c.season === 'FW26');
+    const fwBreakdown = [
+      { category: 'hoodies' as const, count: 20, basePrice: 92, slot: 'top' as const, prefix: 'Heavyweight Boxy Drip Hoodie' },
+      { category: 'bottoms' as const, count: 15, basePrice: 84, slot: 'bottom' as const, prefix: 'Heavy French Terry Cargo Pants' },
+      { category: 'outerwear' as const, count: 10, basePrice: 145, slot: 'top' as const, prefix: 'Quilted Boxy Puffer Down Jacket' },
+      { category: 'accessories' as const, count: 5, basePrice: 35, slot: 'head' as const, prefix: 'Heavy Ribbed Knit Beanie' },
+    ];
+
+    for (const group of fwBreakdown) {
+      const categoryPool = IMAGE_SETS_FW26[group.category];
+      for (let i = 0; i < group.count; i++) {
+        const collection = fwCollections[(overallIndex - 1) % fwCollections.length];
+        const colorSet = COLORS_POOL[(overallIndex - 1) % COLORS_POOL.length];
+        const isFlashSale = overallIndex % 4 === 0;
+        const discountPercent = isFlashSale ? 25 : 0;
+        const price = Math.round(group.basePrice + (overallIndex % 7) * 6);
+        const originalPrice = isFlashSale ? Math.round(price * 1.33) : price;
+        const categoryFallback = categoryPool[i % categoryPool.length];
+        const heroMasterpiece = CLOUDINARY_MASTERPIECES[collection.name];
+        const frontImage = heroMasterpiece || categoryFallback;
+        const isAccessoryItem = group.category === 'accessories' && i >= 3;
+        const currentSlot = isAccessoryItem ? ('accessory' as const) : group.slot;
+        const currentPrefix = isAccessoryItem ? 'Tactical Fidlock Chest Rig Bag' : group.prefix;
+        const title = `${collection.name} ${currentPrefix} #${overallIndex}`;
+        const itemCreatedAt = new Date(now - (105 - overallIndex) * 3600000);
+
+        productsToInsert.push({
+          title,
+          price,
+          originalPrice,
+          category: group.category,
+          season: 'FW26',
+          collectionName: collection.name,
+          description: `Fall/Winter 2026 heavyweight capsule from the ${collection.name} collection. Built with armor-grade ${collection.gsm} GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.`,
+          images: [frontImage, getBackView(frontImage), getDetailView(frontImage)],
+          colors: colorSet,
+          sizes: group.category === 'accessories' ? ['One Size'] : ['S', 'M', 'L', 'XL', 'XXL'],
+          gsm: collection.gsm,
+          stock: Math.floor(12 + Math.random() * 35),
+          isFlashSale,
+          discountPercent,
+          tags: [collection.tag, 'FW26', 'FallWinter', 'Heavyweight', 'Streetwear', 'FashionWekk', 'KhanhBro', group.category],
+          rating: Number((4.8 + (overallIndex % 3) * 0.08).toFixed(1)),
+          reviewCount: Math.floor(28 + Math.random() * 90),
+          mascotSlot: currentSlot,
+          mascotAsset: `asset_fw_${group.category}_${(overallIndex % 5) + 1}`,
+          featured: overallIndex <= 16,
+          createdAt: itemCreatedAt,
+          updatedAt: itemCreatedAt,
+        });
+
+        overallIndex++;
+      }
+    }
+
+    // Limited collectibles and art toys
+    const collectibleTitles = [
+      'KhanhBro 3D Liquid Drip Mascot Art Toy 28cm (Limited 100 Pcs)',
+      'Cyber Toon Glitch 8-Ply Canadian Maple Skate Deck',
+      'Demon Mask Pop Art Hand-Painted Resin Bust Statue',
+      'Mecha Bot Evolution Collector Vinyl Figure Metallic Edition',
+    ];
+
+    for (let c = 0; c < collectibleTitles.length; c++) {
+      const frontImage = IMAGE_SETS_COLLECTIBLES[c % IMAGE_SETS_COLLECTIBLES.length];
+      productsToInsert.push({
+        title: collectibleTitles[c],
+        price: 120 + c * 45,
+        originalPrice: 150 + c * 55,
+        category: 'collectibles',
+        season: 'All-Season',
+        collectionName: 'KhanhBro Signature Drip',
+        description: 'Numbered atelier art collector drop directed by KhanhBro. Stamped with authentic gold wax emblem, custom collector wooden presentation crate, and holographic verification certificate.',
+        images: [frontImage, getBackView(frontImage), getDetailView(frontImage)],
+        colors: ['Collector Edition Monochrome', 'Neon Gold Splash'],
+        sizes: ['One Size'],
+        gsm: 0,
+        stock: 15,
+        isFlashSale: false,
+        discountPercent: 0,
+        tags: ['Collectible', 'ArtToy', 'SkateDeck', 'VIP', 'KhanhBro', 'FashionWekk'],
+        rating: 5.0,
+        reviewCount: 42,
+        mascotSlot: 'accessory',
+        mascotAsset: `asset_collectible_${c + 1}`,
+        featured: true,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      });
+    }
+
+    console.log(`Total items prepared: ${productsToInsert.length}`);
     const inserted = await Product.insertMany(productsToInsert);
-    console.log(`Seeded ${inserted.length} products`);
+    console.log(`Successfully seeded ${inserted.length} products into MongoDB!`);
 
     console.log('Seeding sample order...');
     await Order.create({
@@ -317,25 +359,25 @@ const seedDatabase = async () => {
           image: inserted[0].images[0],
         },
         {
-          productId: inserted[5]._id.toString(),
-          title: inserted[5].title,
-          price: inserted[5].price,
-          quantity: 2,
-          size: 'M',
-          color: inserted[5].colors[0],
-          image: inserted[5].images[0],
+          productId: inserted[55]._id.toString(),
+          title: inserted[55].title,
+          price: inserted[55].price,
+          quantity: 1,
+          size: 'XL',
+          color: inserted[55].colors[0],
+          image: inserted[55].images[0],
         },
       ],
-      subtotal: inserted[0].price + inserted[5].price * 2,
-      discountAmount: 15,
+      subtotal: inserted[0].price + inserted[55].price,
+      discountAmount: 20,
       shippingFee: 0,
-      totalAmount: inserted[0].price + inserted[5].price * 2 - 15,
+      totalAmount: inserted[0].price + inserted[55].price - 20,
       couponApplied: 'TOON10',
       status: 'processing',
       paymentMethod: 'cod',
     });
 
-    console.log('Seeding complete.');
+    console.log('Seeding completed successfully.');
     process.exit(0);
   } catch (error: any) {
     console.error('Seeder failed:', error);

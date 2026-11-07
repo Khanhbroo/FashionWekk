@@ -20,6 +20,7 @@ export interface IProduct extends Document {
   mascotAsset?: string;
   featured?: boolean;
   collectionName?: string;
+  season?: 'SS26' | 'FW26' | 'All-Season';
   createdAt: Date;
   updatedAt: Date;
 }
@@ -36,6 +37,12 @@ const ProductSchema: Schema = new Schema(
       index: true,
     },
     collectionName: { type: String, default: '', index: true },
+    season: {
+      type: String,
+      enum: ['SS26', 'FW26', 'All-Season'],
+      default: 'All-Season',
+      index: true,
+    },
     description: { type: String, required: true },
     images: { type: [String], default: [] },
     colors: { type: [String], default: [] },

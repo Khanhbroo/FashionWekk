@@ -6,6 +6,7 @@ export const getProducts = async (req: Request, res: Response) => {
     const {
       category,
       collection,
+      season,
       search,
       flashSale,
       minPrice,
@@ -25,6 +26,10 @@ export const getProducts = async (req: Request, res: Response) => {
 
     if (collection && collection !== 'all') {
       filter.collectionName = collection;
+    }
+
+    if (season && season !== 'all') {
+      filter.season = season;
     }
 
     if (flashSale === 'true') {
