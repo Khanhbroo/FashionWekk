@@ -27,14 +27,17 @@ export const ProductList: React.FC<ProductListProps> = ({
         {[...Array(8)].map((_, i) => (
           <div
             key={i}
-            className="flex flex-col rounded-3xl bg-white p-4 border-2 border-slate-900/10 shadow-[4px_4px_0px_#0F172A] animate-pulse"
+            className="flex flex-col bg-white dark:bg-[#0E121B] border-2 border-[#0A0A0C] dark:border-white/20 shadow-[4px_4px_0px_#0A0A0C] dark:shadow-[4px_4px_0px_rgba(212,255,0,0.4)] animate-pulse overflow-hidden"
           >
-            <div className="aspect-[4/5] w-full rounded-2xl bg-slate-200 mb-4" />
-            <div className="h-4 w-3/4 rounded bg-slate-200 mb-2" />
-            <div className="h-3 w-1/2 rounded bg-slate-200 mb-4" />
-            <div className="mt-auto flex justify-between items-center pt-2">
-              <div className="h-5 w-16 rounded bg-slate-200" />
-              <div className="h-7 w-20 rounded bg-slate-200" />
+            <div className="h-7 w-full border-b border-[#0A0A0C]/15 dark:border-white/10 bg-slate-100 dark:bg-[#121622] px-3 py-1.5" />
+            <div className="aspect-[4/5] w-full bg-slate-200 dark:bg-slate-800" />
+            <div className="p-3.5 space-y-2">
+              <div className="h-4 w-3/4 bg-slate-200 dark:bg-slate-700" />
+              <div className="h-3 w-1/2 bg-slate-200 dark:bg-slate-700" />
+              <div className="mt-3 flex justify-between items-center pt-2 border-t border-slate-100 dark:border-slate-800">
+                <div className="h-5 w-16 bg-slate-200 dark:bg-slate-700" />
+                <div className="h-6 w-20 bg-slate-200 dark:bg-slate-700" />
+              </div>
             </div>
           </div>
         ))}
@@ -72,10 +75,11 @@ export const ProductList: React.FC<ProductListProps> = ({
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 py-6">
-      {products.map((product) => (
+      {products.map((product, index) => (
         <ProductCard
           key={product._id}
           product={product}
+          index={index}
           onOpenModal={onOpenModal}
           onSelectCollection={onSelectCollection}
         />

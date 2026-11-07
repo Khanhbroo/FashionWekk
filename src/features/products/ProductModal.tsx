@@ -15,6 +15,7 @@ import { useMascotStore } from '../../stores/mascotStore';
 import { useCartStore } from '../../stores/cartStore';
 import { useSoundFx } from '../../hooks/useSoundFx';
 import { SizeChartModal } from './SizeChartModal';
+import { getMascotSlotForCategory, getMascotSlotBadge } from '../mascot/mascotLabels';
 import {
   animateModalOpen,
   animateModalClose,
@@ -52,6 +53,9 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
 
   const isEquipped = Object.values(equipped).some((item) => item?._id === product._id);
   const isOutOfStock = product.stock === 0;
+
+  const slotKey = getMascotSlotForCategory(product.category, product.mascotSlot);
+  const slotMeta = getMascotSlotBadge(slotKey);
 
   useEffect(() => {
     if (modalRef.current && backdropRef.current) {
@@ -117,11 +121,11 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
         <div
           ref={modalRef}
           onClick={(e) => e.stopPropagation()}
-          className="relative flex max-h-[92dvh] w-full max-w-4xl flex-col md:flex-row overflow-y-auto md:overflow-hidden rounded-3xl bg-white border-2 border-slate-900/15 shadow-[8px_8px_0px_#0F172A] text-slate-900"
+          className="relative flex max-h-[92dvh] w-full max-w-4xl flex-col md:flex-row overflow-y-auto md:overflow-hidden bg-white border-2 border-[#0A0A0C] shadow-[10px_10px_0px_#0A0A0C] text-[#0A0A0C]"
         >
           <button
             onClick={handleClose}
-            className="absolute right-4 top-4 z-20 rounded-full bg-slate-900/10 hover:bg-slate-900/20 p-2 text-slate-700 backdrop-blur-md transition-colors"
+            className="absolute right-4 top-4 z-20 bg-white hover:bg-[#D4FF00] p-2 text-black border border-[#0A0A0C] transition-colors cursor-pointer"
           >
             <X className="h-5 w-5" />
           </button>
@@ -190,22 +194,33 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                 </span>
               </div>
 
-              <h2 className="mt-1.5 font-display text-xl sm:text-2xl font-black text-slate-900">
+              <h2 className="mt-1.5 font-display text-xl sm:text-2xl font-black italic uppercase tracking-tight text-[#0A0A0C]">
                 {product.title}
               </h2>
 
-              <div className="mt-3 flex items-baseline gap-3">
-                <span className="font-display text-2xl font-black text-[#FF5722]">
-                  ${product.price}
+              <div className="mt-3 flex items-baseline gap-3 flex-wrap">
+                <span className="font-display text-2xl font-black text-[#0A0A0C]">
+                  ${product.price}.00 USD
                 </span>
                 {product.originalPrice > product.price && (
-                  <span className="text-sm text-slate-400 line-through">
-                    ${product.originalPrice}
+                  <span className="text-sm text-slate-400 line-through font-mono">
+                    ${product.originalPrice}.00 USD
                   </span>
                 )}
-                <span className="rounded-md bg-amber-50 px-2.5 py-0.5 text-xs font-mono font-bold text-amber-700 border border-amber-200">
-                  {product.gsm} GSM Heavyweight
-                </span>
+                {product.gsm > 0 && (
+                  <span className="bg-[#D4FF00] px-2.5 py-0.5 text-xs font-mono font-black uppercase text-black border border-black/30 shadow-xs">
+                    {product.gsm} GSM Heavyweight
+                  </span>
+                )}
+                {slotKey !== 'none' && (
+                  <span
+                    className="px-2.5 py-0.5 text-xs font-mono font-black uppercase text-[#0A0A0C] border border-[#0A0A0C] shadow-xs flex items-center gap-1.5"
+                    style={{ borderLeftColor: slotMeta.accentColor, borderLeftWidth: '4px', backgroundColor: `${slotMeta.accentColor}18` }}
+                  >
+                    <span>Mascot Slot:</span>
+                    <span className="font-bold">{slotMeta.label}</span>
+                  </span>
+                )}
               </div>
 
               <div className="mt-4 flex gap-4 border-b border-slate-200 text-xs font-bold">
@@ -360,14 +375,14 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                   }`}
                 >
                   <Shirt className="h-4 w-4" />
-                  {isEquipped ? 'Equipped on Mascot' : 'Equip on Mascot Fit'}
+                  {isEquipped ? `${slotMeta.label} Fitted on Mascot` : `Equip on Mascot (${slotMeta.label})`}
                 </button>
 
                 <button
                   ref={addBtnRef}
                   disabled={isOutOfStock}
                   onClick={handleAddToCart}
-                  className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-slate-900 hover:bg-[#FF5722] py-3 text-xs font-black text-white shadow-md transition-all disabled:opacity-40 disabled:pointer-events-none hover:scale-[1.02] cursor-pointer"
+                  className="flex flex-1 items-center justify-center gap-1.5 py-3 text-xs font-black tracking-widest uppercase transition-all disabled:opacity-40 disabled:pointer-events-none hover:scale-[1.02] cursor-pointer lime-gradient-btn"
                 >
                   <ShoppingBag className="h-4 w-4" />
                   {isOutOfStock ? 'Sold Out' : `Add to Bag (${quantity})`}

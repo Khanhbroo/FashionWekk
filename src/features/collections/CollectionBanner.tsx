@@ -84,16 +84,16 @@ const COLLECTION_STORIES: Record<
 };
 
 const COLLECTION_HERO_MAP: Record<string, string> = {
-  'KhanhBro Signature Drip': '/assets/images/khanhbro_hoodie_sample.jpg',
-  'Cyber Toon Glitch': '/assets/images/cyber_toon_glitch.jpg',
-  'Mecha Bot Evolution': '/assets/images/mecha_bot_evolution.jpg',
-  'Street Ronin Brush': '/assets/images/street_ronin_brush.jpg',
-  'Chibi Harajuku Splash': '/assets/images/chibi_harajuku_splash.jpg',
-  'Pixel Quest 8-Bit': '/assets/images/pixel_quest_8bit.jpg',
-  'Solar Flare Washed': '/assets/images/solar_flare_washed.jpg',
-  'Synth Wave Sunset': '/assets/images/synth_wave_sunset.jpg',
-  'Demon Mask Pop Art': '/assets/images/demon_mask_popart.jpg',
-  'Rogue Clan Distressed': '/assets/images/rogue_clan_distressed.jpg',
+  'KhanhBro Signature Drip': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/khanhbro_hero_signature_drip.jpg',
+  'Cyber Toon Glitch': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/cyber_toon_glitch_hero.jpg',
+  'Mecha Bot Evolution': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/mecha_bot_evolution.jpg',
+  'Street Ronin Brush': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/street_ronin_brush.jpg',
+  'Chibi Harajuku Splash': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/chibi_harajuku_splash.jpg',
+  'Pixel Quest 8-Bit': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/pixel_quest_8bit.jpg',
+  'Solar Flare Washed': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/solar_flare_washed.jpg',
+  'Synth Wave Sunset': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/synth_wave_sunset.jpg',
+  'Demon Mask Pop Art': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/demon_mask_popart.jpg',
+  'Rogue Clan Distressed': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/rogue_clan_distressed.jpg',
 };
 
 export const CollectionBanner: React.FC<CollectionBannerProps> = ({
@@ -126,7 +126,7 @@ export const CollectionBanner: React.FC<CollectionBannerProps> = ({
   return (
     <div
       ref={bannerRef}
-      className="relative mb-6 overflow-hidden rounded-3xl bg-white p-6 border-2 border-slate-900/10 shadow-[4px_4px_0px_#0F172A]"
+      className="relative mb-6 overflow-hidden bg-white p-6 border-2 border-[#0A0A0C] shadow-[6px_6px_0px_#0A0A0C]"
     >
       <div
         className="absolute -right-10 -top-10 h-40 w-40 rounded-full blur-3xl opacity-15 pointer-events-none"

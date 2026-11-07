@@ -14,6 +14,7 @@ import { Product } from '../../types';
 import { ProductCard } from '../products/ProductCard';
 import { ProductTableView } from '../products/ProductTableView';
 import { animateSquashAndStretch } from '../../utils/animations';
+import { getOptimizedImageUrl, preloadCollectionImages } from '../../utils/imageOptimizer';
 
 interface CollectionPageProps {
   collectionName: string;
@@ -182,16 +183,16 @@ export const COLLECTION_CATALOG: Record<string, CollectionMeta> = {
 const ALL_COLLECTION_NAMES = Object.keys(COLLECTION_CATALOG);
 
 export const COLLECTION_HERO_MAP: Record<string, string> = {
-  'KhanhBro Signature Drip': '/assets/images/khanhbro_hoodie_sample.jpg',
-  'Cyber Toon Glitch': '/assets/images/cyber_toon_glitch.jpg',
-  'Mecha Bot Evolution': '/assets/images/mecha_bot_evolution.jpg',
-  'Street Ronin Brush': '/assets/images/street_ronin_brush.jpg',
-  'Chibi Harajuku Splash': '/assets/images/chibi_harajuku_splash.jpg',
-  'Pixel Quest 8-Bit': '/assets/images/pixel_quest_8bit.jpg',
-  'Solar Flare Washed': '/assets/images/solar_flare_washed.jpg',
-  'Synth Wave Sunset': '/assets/images/synth_wave_sunset.jpg',
-  'Demon Mask Pop Art': '/assets/images/demon_mask_popart.jpg',
-  'Rogue Clan Distressed': '/assets/images/rogue_clan_distressed.jpg',
+  'KhanhBro Signature Drip': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/khanhbro_hero_signature_drip.jpg',
+  'Cyber Toon Glitch': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/cyber_toon_glitch_hero.jpg',
+  'Mecha Bot Evolution': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/mecha_bot_evolution.jpg',
+  'Street Ronin Brush': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/street_ronin_brush.jpg',
+  'Chibi Harajuku Splash': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/chibi_harajuku_splash.jpg',
+  'Pixel Quest 8-Bit': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/pixel_quest_8bit.jpg',
+  'Solar Flare Washed': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/solar_flare_washed.jpg',
+  'Synth Wave Sunset': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/synth_wave_sunset.jpg',
+  'Demon Mask Pop Art': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/demon_mask_popart.jpg',
+  'Rogue Clan Distressed': 'https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/fashionwekk/masterpieces/rogue_clan_distressed.jpg',
 };
 
 export const CollectionPage: React.FC<CollectionPageProps> = ({
@@ -232,7 +233,13 @@ export const CollectionPage: React.FC<CollectionPageProps> = ({
         { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }
       );
     }
-  }, [collectionName]);
+
+    const currentCollectionImages = allProducts
+      .filter((p) => p.collectionName?.toLowerCase().trim() === collectionName.toLowerCase().trim())
+      .map((p) => p.images?.[0])
+      .filter(Boolean);
+    preloadCollectionImages(currentCollectionImages, 4);
+  }, [collectionName, allProducts]);
 
   const collectionProducts = allProducts.filter((p) => {
     const matchesCollection =
@@ -291,7 +298,7 @@ export const CollectionPage: React.FC<CollectionPageProps> = ({
 
       <div
         ref={heroRef}
-        className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${meta.bgGradient} p-5 sm:p-10 lg:p-12 border-2 border-slate-900/15 shadow-[6px_6px_0px_#0F172A] mb-8 sm:mb-12`}
+        className={`relative overflow-hidden bg-white dark:bg-[#0E121B] p-5 sm:p-10 lg:p-12 border-2 border-[#0A0A0C] dark:border-white/20 shadow-[8px_8px_0px_#0A0A0C] dark:shadow-[8px_8px_0px_rgba(212,255,0,0.4)] mb-8 sm:mb-12 transition-colors`}
       >
         <div
           className="absolute -right-20 -top-20 h-80 w-80 rounded-full blur-3xl opacity-25 pointer-events-none"
@@ -307,84 +314,87 @@ export const CollectionPage: React.FC<CollectionPageProps> = ({
               <span className="text-[#D4FF00]">{meta.edition}</span>
             </div>
 
-            <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+            <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
               COLLECTION: <span style={{ color: meta.accentColor }}>{collectionName}</span>
             </h1>
 
-            <p className="mt-2 text-base sm:text-lg font-semibold text-slate-700">
+            <p className="mt-2 text-base sm:text-lg font-semibold text-slate-700 dark:text-slate-300">
               {meta.subtitle}
             </p>
 
-            <p className="mt-4 text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed font-medium">
+            <p className="mt-4 text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed font-medium">
               {meta.description}
             </p>
 
-            <div className="mt-6 rounded-2xl bg-white/80 backdrop-blur-sm p-4 sm:p-5 border border-slate-200/80 max-w-3xl">
-              <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-500 mb-1.5">
+            <div className="mt-6 rounded-2xl bg-white/80 dark:bg-[#121622]/80 backdrop-blur-sm p-4 sm:p-5 border border-slate-200/80 dark:border-slate-800 max-w-3xl">
+              <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
                 <span className="text-[#FF5722] font-black">//</span>
                 <span>Creative Director’s Atelier Note</span>
               </div>
-              <p className="text-xs text-slate-700 leading-relaxed font-serif italic">
+              <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed font-serif italic">
                 "{meta.lore}"
               </p>
-              <div className="mt-2 flex items-center justify-between text-[11px] font-mono text-slate-500 pt-2 border-t border-slate-200">
+              <div className="mt-2 flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-200 dark:border-slate-800">
                 <span>Curated by KhanhBro</span>
                 <span className="font-bold text-[#FF5722]">FashionWekk Atelier</span>
               </div>
             </div>
 
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-3xl">
-              <div className="rounded-2xl bg-white p-3.5 border border-slate-200 shadow-xs">
+              <div className="rounded-2xl bg-white dark:bg-[#141A26] p-3.5 border border-slate-200 dark:border-slate-800 shadow-xs">
                 <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 block font-bold">
                   Fabric Density
                 </span>
-                <span className="font-mono text-sm sm:text-base font-black text-slate-900 mt-0.5 block">
+                <span className="font-mono text-sm sm:text-base font-black text-slate-900 dark:text-white mt-0.5 block">
                   {meta.gsm} GSM
                 </span>
-                <span className="text-[10px] text-slate-500">Heavyweight Terry</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">Heavyweight Terry</span>
               </div>
 
-              <div className="rounded-2xl bg-white p-3.5 border border-slate-200 shadow-xs">
+              <div className="rounded-2xl bg-white dark:bg-[#141A26] p-3.5 border border-slate-200 dark:border-slate-800 shadow-xs">
                 <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 block font-bold">
                   Silhouette
                 </span>
-                <span className="text-xs sm:text-xs font-bold text-slate-900 mt-0.5 block line-clamp-1">
+                <span className="text-xs sm:text-xs font-bold text-slate-900 dark:text-white mt-0.5 block line-clamp-1">
                   {meta.silhouette.split(' ')[0]} {meta.silhouette.split(' ')[1]}
                 </span>
-                <span className="text-[10px] text-slate-500">Boxy Drop Cut</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">Boxy Drop Cut</span>
               </div>
 
-              <div className="rounded-2xl bg-white p-3.5 border border-slate-200 shadow-xs">
+              <div className="rounded-2xl bg-white dark:bg-[#141A26] p-3.5 border border-slate-200 dark:border-slate-800 shadow-xs">
                 <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 block font-bold">
                   Print Tech
                 </span>
-                <span className="text-xs sm:text-xs font-bold text-slate-900 mt-0.5 block line-clamp-1">
+                <span className="text-xs sm:text-xs font-bold text-slate-900 dark:text-white mt-0.5 block line-clamp-1">
                   High-Density
                 </span>
-                <span className="text-[10px] text-slate-500">3D Tactile Ink</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">3D Tactile Ink</span>
               </div>
 
-              <div className="rounded-2xl bg-white p-3.5 border border-slate-200 shadow-xs">
+              <div className="rounded-2xl bg-white dark:bg-[#141A26] p-3.5 border border-slate-200 dark:border-slate-800 shadow-xs">
                 <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 block font-bold">
                   Pieces in Drop
                 </span>
                 <span className="font-mono text-sm sm:text-base font-black text-[#FF5722] mt-0.5 block">
                   {collectionProducts.length} Pieces
                 </span>
-                <span className="text-[10px] text-slate-500">Vault Available</span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">Vault Available</span>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-4 flex justify-center">
-            <div className="w-full max-w-xs sm:max-w-sm rounded-3xl bg-white p-4 sm:p-5 border-2 border-slate-900/15 shadow-[6px_6px_0px_#0F172A]">
-              <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-100 text-[10px] font-mono font-bold text-slate-500 uppercase">
+            <div className="w-full max-w-xs sm:max-w-sm rounded-3xl bg-white dark:bg-[#121622] p-4 sm:p-5 border-2 border-[#0A0A0C] dark:border-white/20 shadow-[6px_6px_0px_#0A0A0C] dark:shadow-[6px_6px_0px_rgba(212,255,0,0.4)]">
+              <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-100 dark:border-slate-800 text-[10px] font-mono font-bold text-slate-500 dark:text-slate-400 uppercase">
                 <span className="text-[#FF5722] font-black">GRAIL HERO ART</span>
                 <span>{meta.edition}</span>
               </div>
-              <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-slate-100 border border-slate-200 select-none">
+              <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 select-none">
                 <img
-                  src={COLLECTION_HERO_MAP[collectionName] || '/assets/images/khanhbro_hoodie_sample.jpg'}
+                  src={getOptimizedImageUrl(
+                    COLLECTION_HERO_MAP[collectionName] || '/assets/images/khanhbro_hoodie_sample.jpg',
+                    { width: 800, quality: 'auto:good' }
+                  )}
                   alt={`${collectionName} Hero Grail`}
                   width="400"
                   height="400"
@@ -397,10 +407,10 @@ export const CollectionPage: React.FC<CollectionPageProps> = ({
                 </div>
               </div>
               <div className="mt-3">
-                <h4 className="font-display text-sm font-black text-slate-900 line-clamp-1">
+                <h4 className="font-display text-sm font-black text-slate-900 dark:text-white line-clamp-1">
                   {collectionName} Flagship Piece
                 </h4>
-                <p className="text-[10px] text-slate-500 font-mono mt-0.5">
+                <p className="text-[10px] text-slate-500 dark:text-slate-400 font-mono mt-0.5">
                   100% Proprietary KhanhBro 3D Pop-Art
                 </p>
               </div>
@@ -545,10 +555,11 @@ export const CollectionPage: React.FC<CollectionPageProps> = ({
         />
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 py-2">
-          {sortedProducts.map((product) => (
+          {sortedProducts.map((product, index) => (
             <ProductCard
               key={product._id}
               product={product}
+              index={index}
               onOpenModal={(p) => onSelectProduct(p)}
               onSelectCollection={(col) => onSelectCollection(col)}
             />

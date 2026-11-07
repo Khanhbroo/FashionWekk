@@ -6,12 +6,17 @@ import {
   LayoutGrid,
   TableProperties,
 } from 'lucide-react';
+import { MASCOT_SLOTS } from '../mascot/mascotLabels';
 
 interface ProductFilterProps {
   category: string;
   onSelectCategory: (cat: string) => void;
   collection: string;
   onSelectCollection: (col: string) => void;
+  season?: string;
+  onSelectSeason?: (season: string) => void;
+  mascotSlot?: string;
+  onSelectMascotSlot?: (slot: string) => void;
   search: string;
   onSearchChange: (search: string) => void;
   flashSale: boolean;
@@ -22,6 +27,12 @@ interface ProductFilterProps {
   onViewModeChange: (mode: 'grid' | 'table') => void;
   onReset: () => void;
 }
+
+const SEASONS = [
+  { id: 'all', label: 'All Seasons' },
+  { id: 'SS26', label: '☀️ Spring / Summer SS26' },
+  { id: 'FW26', label: '❄️ Fall / Winter FW26' },
+];
 
 const CATEGORIES = [
   { id: 'all', label: 'All Drops' },
@@ -50,6 +61,10 @@ export const ProductFilter: React.FC<ProductFilterProps> = ({
   onSelectCategory,
   collection,
   onSelectCollection,
+  season = 'all',
+  onSelectSeason,
+  mascotSlot = 'all',
+  onSelectMascotSlot,
   search,
   onSearchChange,
   flashSale,
@@ -61,19 +76,86 @@ export const ProductFilter: React.FC<ProductFilterProps> = ({
   onReset,
 }) => {
   const isFiltered =
-    category !== 'all' || collection !== 'all' || Boolean(search) || flashSale;
+    category !== 'all' ||
+    collection !== 'all' ||
+    season !== 'all' ||
+    (mascotSlot && mascotSlot !== 'all') ||
+    Boolean(search) ||
+    flashSale;
 
   return (
     <div className="space-y-4">
+      {/* Mascot Dress-Up Slot Filter Bar */}
+      {onSelectMascotSlot && (
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+          <span className="flex items-center gap-1 text-xs font-black text-[#0A0A0C] uppercase tracking-wider pl-1 flex-shrink-0 font-mono">
+            Mascot Fit:
+          </span>
+          <button
+            onClick={() => onSelectMascotSlot('all')}
+            className={`whitespace-nowrap rounded-xl px-3 py-1.5 text-xs font-mono font-bold tracking-wider uppercase transition-all cursor-pointer border ${
+              mascotSlot === 'all'
+                ? 'bg-[#0A0A0C] text-[#D4FF00] border-[#0A0A0C] shadow-xs'
+                : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border-slate-200 shadow-xs'
+            }`}
+          >
+            All Slots
+          </button>
+          {MASCOT_SLOTS.map((slot) => {
+            const isSelected = mascotSlot === slot.id;
+            return (
+              <button
+                key={slot.id}
+                onClick={() => onSelectMascotSlot(slot.id)}
+                className={`whitespace-nowrap rounded-xl px-3 py-1.5 text-xs font-mono font-bold tracking-wider uppercase transition-all cursor-pointer flex items-center gap-1.5 border ${
+                  isSelected
+                    ? 'bg-[#0A0A0C] text-white border-[#0A0A0C] shadow-xs'
+                    : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border-slate-200 shadow-xs'
+                }`}
+                style={isSelected ? { borderLeftColor: slot.accentColor, borderLeftWidth: '4px' } : {}}
+              >
+                <span
+                  className="h-2 w-2 rounded-full"
+                  style={{ backgroundColor: slot.accentColor }}
+                />
+                {slot.label}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Season Selection Bar */}
+      {onSelectSeason && (
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+          <span className="flex items-center gap-1 text-xs font-black text-amber-500 uppercase tracking-wider pl-1 flex-shrink-0 font-mono">
+            Season:
+          </span>
+          {SEASONS.map((s) => (
+            <button
+              key={s.id}
+              onClick={() => onSelectSeason(s.id)}
+              className={`whitespace-nowrap rounded-xl px-3.5 py-1.5 text-xs font-black tracking-wide transition-all ${
+                season === s.id
+                  ? 'bg-slate-900 text-white shadow-md'
+                  : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs'
+              }`}
+            >
+              {s.label}
+            </button>
+          ))}
+        </div>
+      )}
+
       <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
         {CATEGORIES.map((cat) => (
           <button
             key={cat.id}
             onClick={() => onSelectCategory(cat.id)}
-            className={`whitespace-nowrap rounded-xl px-4 py-2 text-xs font-bold transition-all ${
+            className={`whitespace-nowrap px-3.5 py-1.5 text-xs font-mono font-bold uppercase tracking-wider transition-all cursor-pointer border ${
               category === cat.id
-                ? 'bg-[#FF5722] text-white shadow-md shadow-[#FF5722]/30'
-                : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/90 shadow-sm'
+                ? 'bg-[#0A0A0C] text-white border-[#0A0A0C] shadow-xs'
+                : 'bg-white text-slate-700 hover:bg-[#D4FF00] hover:text-black border-slate-300 shadow-xs'
             }`}
           >
             {cat.label}
@@ -82,17 +164,17 @@ export const ProductFilter: React.FC<ProductFilterProps> = ({
       </div>
 
       <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
-        <span className="flex items-center gap-1 text-xs font-black text-[#0096C7] uppercase tracking-wider pl-1 flex-shrink-0 font-mono">
+        <span className="flex items-center gap-1 text-[11px] font-mono font-black text-[#0A0A0C] uppercase tracking-wider pl-1 flex-shrink-0">
           Capsules:
         </span>
         {POPULAR_COLLECTIONS.map((col) => (
           <button
             key={col.id}
             onClick={() => onSelectCollection(col.id)}
-            className={`whitespace-nowrap rounded-lg px-3 py-1.5 text-xs font-semibold transition-all ${
+            className={`whitespace-nowrap px-3 py-1 text-xs font-mono font-bold uppercase transition-all cursor-pointer border ${
               collection === col.id
-                ? 'bg-[#0096C7] text-white font-bold shadow-sm'
-                : 'bg-white/80 text-slate-600 hover:bg-white hover:text-slate-900 border border-slate-200/70 shadow-xs'
+                ? 'bg-[#D4FF00] text-black border-[#0A0A0C] shadow-xs'
+                : 'bg-white text-slate-600 hover:bg-[#0A0A0C] hover:text-white border-slate-300 shadow-xs'
             }`}
           >
             {col.label}
@@ -105,20 +187,20 @@ export const ProductFilter: React.FC<ProductFilterProps> = ({
           <Search className="absolute left-3.5 top-2.5 h-4 w-4 text-slate-400" />
           <input
             type="text"
-            placeholder="Search cartoon drops, GSM, hoodies, splashes..."
+            placeholder="Search drops, GSM, hoodies, splashes..."
             value={search}
             onChange={(e) => onSearchChange(e.target.value)}
-            className="w-full rounded-xl bg-white pl-10 pr-4 py-2 text-xs sm:text-xs text-slate-900 border border-slate-200 shadow-sm focus:border-[#FF5722] focus:ring-2 focus:ring-[#FF5722]/20 focus:outline-none placeholder:text-slate-400 font-medium"
+            className="w-full bg-white pl-10 pr-4 py-2 text-xs text-slate-900 border border-[#0A0A0C] shadow-xs focus:ring-1 focus:ring-[#0A0A0C] focus:outline-none placeholder:text-slate-400 font-mono font-medium"
           />
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={onToggleFlashSale}
-            className={`flex items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-black uppercase tracking-wider transition-all flex-shrink-0 cursor-pointer font-mono ${
+            className={`flex items-center gap-1.5 px-3 py-2 text-xs font-black uppercase tracking-wider transition-all flex-shrink-0 cursor-pointer font-mono border ${
               flashSale
-                ? 'bg-[#FF2E93] text-white shadow-md shadow-[#FF2E93]/25'
-                : 'bg-white text-slate-700 hover:text-slate-900 border border-slate-200 shadow-sm'
+                ? 'bg-[#D4FF00] text-black border-[#0A0A0C] shadow-xs'
+                : 'bg-white text-slate-700 hover:text-black border-slate-300 shadow-xs'
             }`}
           >
             Flash Drops
@@ -130,7 +212,7 @@ export const ProductFilter: React.FC<ProductFilterProps> = ({
               value={sortBy}
               onChange={(e) => onSortChange(e.target.value)}
               aria-label="Sort drops"
-              className="w-full appearance-none rounded-xl bg-white pl-8 pr-7 py-2 text-xs font-semibold text-slate-800 border border-slate-200 shadow-sm focus:border-[#FF5722] focus:outline-none cursor-pointer"
+              className="w-full appearance-none bg-white pl-8 pr-7 py-2 text-xs font-mono font-bold uppercase text-slate-800 border border-[#0A0A0C] shadow-xs focus:outline-none cursor-pointer"
             >
               <option value="featured">Featured Drops</option>
               <option value="price-asc">Price: Low to High</option>
@@ -140,13 +222,13 @@ export const ProductFilter: React.FC<ProductFilterProps> = ({
             </select>
           </div>
 
-          <div className="flex items-center rounded-xl bg-white p-1 border border-slate-200 shadow-sm flex-shrink-0">
+          <div className="flex items-center bg-white p-1 border border-[#0A0A0C] shadow-xs flex-shrink-0">
             <button
               onClick={() => onViewModeChange('grid')}
               title="Bento Grid Mode"
-              className={`rounded-lg p-1.5 transition-colors cursor-pointer ${
+              className={`p-1.5 transition-colors cursor-pointer ${
                 viewMode === 'grid'
-                  ? 'bg-[#FF5722] text-white shadow-xs'
+                  ? 'bg-[#0A0A0C] text-[#D4FF00]'
                   : 'text-slate-400 hover:text-slate-800'
               }`}
             >
@@ -155,9 +237,9 @@ export const ProductFilter: React.FC<ProductFilterProps> = ({
             <button
               onClick={() => onViewModeChange('table')}
               title="Spec Table Mode"
-              className={`rounded-lg p-1.5 transition-colors cursor-pointer ${
+              className={`p-1.5 transition-colors cursor-pointer ${
                 viewMode === 'table'
-                  ? 'bg-[#FF5722] text-white shadow-xs'
+                  ? 'bg-[#0A0A0C] text-[#D4FF00]'
                   : 'text-slate-400 hover:text-slate-800'
               }`}
             >
