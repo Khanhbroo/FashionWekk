@@ -1,0 +1,4776 @@
+[
+  {
+    "_id": "prod_ss_1",
+    "title": "Chibi Harajuku Splash Oversize Pop Art Graphic Tee #1",
+    "price": 47,
+    "originalPrice": 47,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_2",
+    "featured": true,
+    "createdAt": "2026-11-03T07:29:11.801Z",
+    "updatedAt": "2026-11-03T07:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_2",
+    "title": "Pixel Quest 8-Bit Oversize Pop Art Graphic Tee #2",
+    "price": 52,
+    "originalPrice": 52,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_3",
+    "featured": true,
+    "createdAt": "2026-11-03T08:29:11.801Z",
+    "updatedAt": "2026-11-03T08:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_3",
+    "title": "Solar Flare Washed Oversize Pop Art Graphic Tee #3",
+    "price": 57,
+    "originalPrice": 57,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_4",
+    "featured": true,
+    "createdAt": "2026-11-03T09:29:11.801Z",
+    "updatedAt": "2026-11-03T09:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_4",
+    "title": "Synth Wave Sunset Oversize Pop Art Graphic Tee #4",
+    "price": 62,
+    "originalPrice": 62,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_5",
+    "featured": true,
+    "createdAt": "2026-11-03T10:29:11.801Z",
+    "updatedAt": "2026-11-03T10:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_5",
+    "title": "Chibi Harajuku Splash Oversize Pop Art Graphic Tee #5",
+    "price": 67,
+    "originalPrice": 84,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_1",
+    "featured": true,
+    "createdAt": "2026-11-03T11:29:11.801Z",
+    "updatedAt": "2026-11-03T11:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_6",
+    "title": "Pixel Quest 8-Bit Oversize Pop Art Graphic Tee #6",
+    "price": 42,
+    "originalPrice": 42,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_2",
+    "featured": true,
+    "createdAt": "2026-11-03T12:29:11.801Z",
+    "updatedAt": "2026-11-03T12:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_7",
+    "title": "Solar Flare Washed Oversize Pop Art Graphic Tee #7",
+    "price": 47,
+    "originalPrice": 47,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_3",
+    "featured": true,
+    "createdAt": "2026-11-03T13:29:11.801Z",
+    "updatedAt": "2026-11-03T13:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_8",
+    "title": "Synth Wave Sunset Oversize Pop Art Graphic Tee #8",
+    "price": 52,
+    "originalPrice": 52,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_4",
+    "featured": true,
+    "createdAt": "2026-11-03T14:29:11.801Z",
+    "updatedAt": "2026-11-03T14:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_9",
+    "title": "Chibi Harajuku Splash Oversize Pop Art Graphic Tee #9",
+    "price": 57,
+    "originalPrice": 57,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_5",
+    "featured": false,
+    "createdAt": "2026-11-03T15:29:11.801Z",
+    "updatedAt": "2026-11-03T15:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_10",
+    "title": "Pixel Quest 8-Bit Oversize Pop Art Graphic Tee #10",
+    "price": 62,
+    "originalPrice": 78,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_1",
+    "featured": false,
+    "createdAt": "2026-11-03T16:29:11.801Z",
+    "updatedAt": "2026-11-03T16:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_11",
+    "title": "Solar Flare Washed Oversize Pop Art Graphic Tee #11",
+    "price": 67,
+    "originalPrice": 67,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_2",
+    "featured": false,
+    "createdAt": "2026-11-03T17:29:11.801Z",
+    "updatedAt": "2026-11-03T17:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_12",
+    "title": "Synth Wave Sunset Oversize Pop Art Graphic Tee #12",
+    "price": 42,
+    "originalPrice": 42,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_3",
+    "featured": false,
+    "createdAt": "2026-11-03T18:29:11.801Z",
+    "updatedAt": "2026-11-03T18:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_13",
+    "title": "Chibi Harajuku Splash Oversize Pop Art Graphic Tee #13",
+    "price": 47,
+    "originalPrice": 47,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_4",
+    "featured": false,
+    "createdAt": "2026-11-03T19:29:11.801Z",
+    "updatedAt": "2026-11-03T19:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_14",
+    "title": "Pixel Quest 8-Bit Oversize Pop Art Graphic Tee #14",
+    "price": 52,
+    "originalPrice": 52,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_5",
+    "featured": false,
+    "createdAt": "2026-11-03T20:29:11.801Z",
+    "updatedAt": "2026-11-03T20:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_15",
+    "title": "Solar Flare Washed Oversize Pop Art Graphic Tee #15",
+    "price": 57,
+    "originalPrice": 71,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_1",
+    "featured": false,
+    "createdAt": "2026-11-03T21:29:11.801Z",
+    "updatedAt": "2026-11-03T21:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_16",
+    "title": "Synth Wave Sunset Oversize Pop Art Graphic Tee #16",
+    "price": 62,
+    "originalPrice": 62,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_2",
+    "featured": false,
+    "createdAt": "2026-11-03T22:29:11.801Z",
+    "updatedAt": "2026-11-03T22:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_17",
+    "title": "Chibi Harajuku Splash Oversize Pop Art Graphic Tee #17",
+    "price": 67,
+    "originalPrice": 67,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_3",
+    "featured": false,
+    "createdAt": "2026-11-03T23:29:11.801Z",
+    "updatedAt": "2026-11-03T23:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_18",
+    "title": "Pixel Quest 8-Bit Oversize Pop Art Graphic Tee #18",
+    "price": 42,
+    "originalPrice": 42,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_4",
+    "featured": false,
+    "createdAt": "2026-11-04T00:29:11.801Z",
+    "updatedAt": "2026-11-04T00:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_19",
+    "title": "Solar Flare Washed Oversize Pop Art Graphic Tee #19",
+    "price": 47,
+    "originalPrice": 47,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_5",
+    "featured": false,
+    "createdAt": "2026-11-04T01:29:11.801Z",
+    "updatedAt": "2026-11-04T01:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_20",
+    "title": "Synth Wave Sunset Oversize Pop Art Graphic Tee #20",
+    "price": 52,
+    "originalPrice": 65,
+    "category": "tees",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "tees"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_tees_1",
+    "featured": false,
+    "createdAt": "2026-11-04T02:29:11.801Z",
+    "updatedAt": "2026-11-04T02:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_21",
+    "title": "Chibi Harajuku Splash Tactical Parachute Street Shorts #21",
+    "price": 83,
+    "originalPrice": 83,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_2",
+    "featured": false,
+    "createdAt": "2026-11-04T03:29:11.801Z",
+    "updatedAt": "2026-11-04T03:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_22",
+    "title": "Pixel Quest 8-Bit Tactical Parachute Street Shorts #22",
+    "price": 88,
+    "originalPrice": 88,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_3",
+    "featured": false,
+    "createdAt": "2026-11-04T04:29:11.801Z",
+    "updatedAt": "2026-11-04T04:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_23",
+    "title": "Solar Flare Washed Tactical Parachute Street Shorts #23",
+    "price": 93,
+    "originalPrice": 93,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_4",
+    "featured": false,
+    "createdAt": "2026-11-04T05:29:11.801Z",
+    "updatedAt": "2026-11-04T05:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_24",
+    "title": "Synth Wave Sunset Tactical Parachute Street Shorts #24",
+    "price": 68,
+    "originalPrice": 68,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_5",
+    "featured": false,
+    "createdAt": "2026-11-04T06:29:11.801Z",
+    "updatedAt": "2026-11-04T06:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_25",
+    "title": "Chibi Harajuku Splash Tactical Parachute Street Shorts #25",
+    "price": 73,
+    "originalPrice": 91,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_1",
+    "featured": false,
+    "createdAt": "2026-11-04T07:29:11.801Z",
+    "updatedAt": "2026-11-04T07:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_26",
+    "title": "Pixel Quest 8-Bit Tactical Parachute Street Shorts #26",
+    "price": 78,
+    "originalPrice": 78,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_2",
+    "featured": false,
+    "createdAt": "2026-11-04T08:29:11.801Z",
+    "updatedAt": "2026-11-04T08:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_27",
+    "title": "Solar Flare Washed Tactical Parachute Street Shorts #27",
+    "price": 83,
+    "originalPrice": 83,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_3",
+    "featured": false,
+    "createdAt": "2026-11-04T09:29:11.801Z",
+    "updatedAt": "2026-11-04T09:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_28",
+    "title": "Synth Wave Sunset Tactical Parachute Street Shorts #28",
+    "price": 88,
+    "originalPrice": 88,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_4",
+    "featured": false,
+    "createdAt": "2026-11-04T10:29:11.801Z",
+    "updatedAt": "2026-11-04T10:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_29",
+    "title": "Chibi Harajuku Splash Tactical Parachute Street Shorts #29",
+    "price": 93,
+    "originalPrice": 93,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_5",
+    "featured": false,
+    "createdAt": "2026-11-04T11:29:11.801Z",
+    "updatedAt": "2026-11-04T11:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_30",
+    "title": "Pixel Quest 8-Bit Tactical Parachute Street Shorts #30",
+    "price": 68,
+    "originalPrice": 85,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_1",
+    "featured": false,
+    "createdAt": "2026-11-04T12:29:11.801Z",
+    "updatedAt": "2026-11-04T12:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_31",
+    "title": "Solar Flare Washed Tactical Parachute Street Shorts #31",
+    "price": 73,
+    "originalPrice": 73,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_2",
+    "featured": false,
+    "createdAt": "2026-11-04T13:29:11.801Z",
+    "updatedAt": "2026-11-04T13:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_32",
+    "title": "Synth Wave Sunset Tactical Parachute Street Shorts #32",
+    "price": 78,
+    "originalPrice": 78,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_3",
+    "featured": false,
+    "createdAt": "2026-11-04T14:29:11.801Z",
+    "updatedAt": "2026-11-04T14:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_33",
+    "title": "Chibi Harajuku Splash Tactical Parachute Street Shorts #33",
+    "price": 83,
+    "originalPrice": 83,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_4",
+    "featured": false,
+    "createdAt": "2026-11-04T15:29:11.801Z",
+    "updatedAt": "2026-11-04T15:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_34",
+    "title": "Pixel Quest 8-Bit Tactical Parachute Street Shorts #34",
+    "price": 88,
+    "originalPrice": 88,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_5",
+    "featured": false,
+    "createdAt": "2026-11-04T16:29:11.801Z",
+    "updatedAt": "2026-11-04T16:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_35",
+    "title": "Solar Flare Washed Tactical Parachute Street Shorts #35",
+    "price": 93,
+    "originalPrice": 116,
+    "category": "bottoms",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_ss_bottoms_1",
+    "featured": false,
+    "createdAt": "2026-11-04T17:29:11.801Z",
+    "updatedAt": "2026-11-04T17:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_36",
+    "title": "Synth Wave Sunset Packable UV Shield Windbreaker #36",
+    "price": 95,
+    "originalPrice": 95,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_2",
+    "featured": false,
+    "createdAt": "2026-11-04T18:29:11.801Z",
+    "updatedAt": "2026-11-04T18:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_37",
+    "title": "Chibi Harajuku Splash Packable UV Shield Windbreaker #37",
+    "price": 100,
+    "originalPrice": 100,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_3",
+    "featured": false,
+    "createdAt": "2026-11-04T19:29:11.801Z",
+    "updatedAt": "2026-11-04T19:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_38",
+    "title": "Pixel Quest 8-Bit Packable UV Shield Windbreaker #38",
+    "price": 105,
+    "originalPrice": 105,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_4",
+    "featured": false,
+    "createdAt": "2026-11-04T20:29:11.801Z",
+    "updatedAt": "2026-11-04T20:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_39",
+    "title": "Solar Flare Washed Packable UV Shield Windbreaker #39",
+    "price": 110,
+    "originalPrice": 110,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_5",
+    "featured": false,
+    "createdAt": "2026-11-04T21:29:11.801Z",
+    "updatedAt": "2026-11-04T21:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_40",
+    "title": "Synth Wave Sunset Packable UV Shield Windbreaker #40",
+    "price": 115,
+    "originalPrice": 144,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_1",
+    "featured": false,
+    "createdAt": "2026-11-04T22:29:11.801Z",
+    "updatedAt": "2026-11-04T22:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_41",
+    "title": "Chibi Harajuku Splash Packable UV Shield Windbreaker #41",
+    "price": 120,
+    "originalPrice": 120,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_2",
+    "featured": false,
+    "createdAt": "2026-11-04T23:29:11.801Z",
+    "updatedAt": "2026-11-04T23:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_42",
+    "title": "Pixel Quest 8-Bit Packable UV Shield Windbreaker #42",
+    "price": 95,
+    "originalPrice": 95,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_3",
+    "featured": false,
+    "createdAt": "2026-11-05T00:29:11.801Z",
+    "updatedAt": "2026-11-05T00:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_43",
+    "title": "Solar Flare Washed Packable UV Shield Windbreaker #43",
+    "price": 100,
+    "originalPrice": 100,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_4",
+    "featured": false,
+    "createdAt": "2026-11-05T01:29:11.801Z",
+    "updatedAt": "2026-11-05T01:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_44",
+    "title": "Synth Wave Sunset Packable UV Shield Windbreaker #44",
+    "price": 105,
+    "originalPrice": 105,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_5",
+    "featured": false,
+    "createdAt": "2026-11-05T02:29:11.801Z",
+    "updatedAt": "2026-11-05T02:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_45",
+    "title": "Chibi Harajuku Splash Packable UV Shield Windbreaker #45",
+    "price": 110,
+    "originalPrice": 138,
+    "category": "outerwear",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_ss_outerwear_1",
+    "featured": false,
+    "createdAt": "2026-11-05T03:29:11.801Z",
+    "updatedAt": "2026-11-05T03:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_46",
+    "title": "Pixel Quest 8-Bit Distressed 5-Panel Street Cap #46",
+    "price": 52,
+    "originalPrice": 52,
+    "category": "accessories",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "head",
+    "mascotAsset": "asset_ss_accessories_2",
+    "featured": false,
+    "createdAt": "2026-11-05T04:29:11.801Z",
+    "updatedAt": "2026-11-05T04:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_47",
+    "title": "Solar Flare Washed Distressed 5-Panel Street Cap #47",
+    "price": 57,
+    "originalPrice": 57,
+    "category": "accessories",
+    "season": "SS26",
+    "collectionName": "Solar Flare Washed",
+    "description": "Spring/Summer 2026 edition from the Solar Flare Washed capsule. Crafted with breathable 270 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892087/fashionwekk/masterpieces/solar_flare_washed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 270,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SolarFlare",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "head",
+    "mascotAsset": "asset_ss_accessories_3",
+    "featured": false,
+    "createdAt": "2026-11-05T05:29:11.801Z",
+    "updatedAt": "2026-11-05T05:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_48",
+    "title": "Synth Wave Sunset Distressed 5-Panel Street Cap #48",
+    "price": 32,
+    "originalPrice": 32,
+    "category": "accessories",
+    "season": "SS26",
+    "collectionName": "Synth Wave Sunset",
+    "description": "Spring/Summer 2026 edition from the Synth Wave Sunset capsule. Crafted with breathable 240 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892122/fashionwekk/masterpieces/synth_wave_sunset.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 240,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "SynthWave",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "mascotSlot": "head",
+    "mascotAsset": "asset_ss_accessories_4",
+    "featured": false,
+    "createdAt": "2026-11-05T06:29:11.801Z",
+    "updatedAt": "2026-11-05T06:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_49",
+    "title": "Chibi Harajuku Splash Chunky Y2K Neon Jewelry Set #49",
+    "price": 37,
+    "originalPrice": 37,
+    "category": "accessories",
+    "season": "SS26",
+    "collectionName": "Chibi Harajuku Splash",
+    "description": "Spring/Summer 2026 edition from the Chibi Harajuku Splash capsule. Crafted with breathable 260 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891791/fashionwekk/masterpieces/chibi_harajuku_splash.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 260,
+    "stock": 35,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "ChibiDrip",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.8,
+    "reviewCount": 38,
+    "mascotSlot": "accessory",
+    "mascotAsset": "asset_ss_accessories_5",
+    "featured": false,
+    "createdAt": "2026-11-05T07:29:11.801Z",
+    "updatedAt": "2026-11-05T07:29:11.801Z"
+  },
+  {
+    "_id": "prod_ss_50",
+    "title": "Pixel Quest 8-Bit Chunky Y2K Neon Jewelry Set #50",
+    "price": 42,
+    "originalPrice": 53,
+    "category": "accessories",
+    "season": "SS26",
+    "collectionName": "Pixel Quest 8-Bit",
+    "description": "Spring/Summer 2026 edition from the Pixel Quest 8-Bit capsule. Crafted with breathable 250 GSM combed organic cotton. Built for warm-weather city movement with sweat-wicking treatment, reinforced seam binding, and signature 3D cartoon liquid pop-art graphics curated by KhanhBro.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891935/fashionwekk/masterpieces/pixel_quest_8bit.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 250,
+    "stock": 35,
+    "isFlashSale": true,
+    "discountPercent": 20,
+    "tags": [
+      "PixelArt",
+      "SS26",
+      "SpringSummer",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.9,
+    "reviewCount": 38,
+    "mascotSlot": "accessory",
+    "mascotAsset": "asset_ss_accessories_1",
+    "featured": false,
+    "createdAt": "2026-11-05T08:29:11.801Z",
+    "updatedAt": "2026-11-05T08:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_51",
+    "title": "Street Ronin Brush Heavyweight Boxy Drip Hoodie #51",
+    "price": 104,
+    "originalPrice": 104,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_2",
+    "featured": false,
+    "createdAt": "2026-11-05T09:29:11.801Z",
+    "updatedAt": "2026-11-05T09:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_52",
+    "title": "Demon Mask Pop Art Heavyweight Boxy Drip Hoodie #52",
+    "price": 110,
+    "originalPrice": 146,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_3",
+    "featured": false,
+    "createdAt": "2026-11-05T10:29:11.801Z",
+    "updatedAt": "2026-11-05T10:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_53",
+    "title": "Rogue Clan Distressed Heavyweight Boxy Drip Hoodie #53",
+    "price": 116,
+    "originalPrice": 116,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Rogue Clan Distressed",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Rogue Clan Distressed collection. Built with armor-grade 450 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 450,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RogueClan",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_4",
+    "featured": false,
+    "createdAt": "2026-11-05T11:29:11.801Z",
+    "updatedAt": "2026-11-05T11:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_54",
+    "title": "KhanhBro Signature Drip Heavyweight Boxy Drip Hoodie #54",
+    "price": 122,
+    "originalPrice": 122,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Fall/Winter 2026 heavyweight capsule from the KhanhBro Signature Drip collection. Built with armor-grade 490 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 490,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "KhanhBro",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_5",
+    "featured": false,
+    "createdAt": "2026-11-05T12:29:11.801Z",
+    "updatedAt": "2026-11-05T12:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_55",
+    "title": "Cyber Toon Glitch Heavyweight Boxy Drip Hoodie #55",
+    "price": 128,
+    "originalPrice": 128,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Cyber Toon Glitch",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Cyber Toon Glitch collection. Built with armor-grade 460 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 460,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PopGlitch",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_1",
+    "featured": false,
+    "createdAt": "2026-11-05T13:29:11.801Z",
+    "updatedAt": "2026-11-05T13:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_56",
+    "title": "Mecha Bot Evolution Heavyweight Boxy Drip Hoodie #56",
+    "price": 92,
+    "originalPrice": 122,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Mecha Bot Evolution",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Mecha Bot Evolution collection. Built with armor-grade 480 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 480,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "MechaBot",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_2",
+    "featured": false,
+    "createdAt": "2026-11-05T14:29:11.801Z",
+    "updatedAt": "2026-11-05T14:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_57",
+    "title": "Street Ronin Brush Heavyweight Boxy Drip Hoodie #57",
+    "price": 98,
+    "originalPrice": 98,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_3",
+    "featured": false,
+    "createdAt": "2026-11-05T15:29:11.801Z",
+    "updatedAt": "2026-11-05T15:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_58",
+    "title": "Demon Mask Pop Art Heavyweight Boxy Drip Hoodie #58",
+    "price": 104,
+    "originalPrice": 104,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_4",
+    "featured": false,
+    "createdAt": "2026-11-05T16:29:11.801Z",
+    "updatedAt": "2026-11-05T16:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_59",
+    "title": "Rogue Clan Distressed Heavyweight Boxy Drip Hoodie #59",
+    "price": 110,
+    "originalPrice": 110,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Rogue Clan Distressed",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Rogue Clan Distressed collection. Built with armor-grade 450 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 450,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RogueClan",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_5",
+    "featured": false,
+    "createdAt": "2026-11-05T17:29:11.801Z",
+    "updatedAt": "2026-11-05T17:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_60",
+    "title": "KhanhBro Signature Drip Heavyweight Boxy Drip Hoodie #60",
+    "price": 116,
+    "originalPrice": 154,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Fall/Winter 2026 heavyweight capsule from the KhanhBro Signature Drip collection. Built with armor-grade 490 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 490,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "KhanhBro",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_1",
+    "featured": false,
+    "createdAt": "2026-11-05T18:29:11.801Z",
+    "updatedAt": "2026-11-05T18:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_61",
+    "title": "Cyber Toon Glitch Heavyweight Boxy Drip Hoodie #61",
+    "price": 122,
+    "originalPrice": 122,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Cyber Toon Glitch",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Cyber Toon Glitch collection. Built with armor-grade 460 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 460,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PopGlitch",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_2",
+    "featured": false,
+    "createdAt": "2026-11-05T19:29:11.801Z",
+    "updatedAt": "2026-11-05T19:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_62",
+    "title": "Mecha Bot Evolution Heavyweight Boxy Drip Hoodie #62",
+    "price": 128,
+    "originalPrice": 128,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Mecha Bot Evolution",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Mecha Bot Evolution collection. Built with armor-grade 480 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 480,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "MechaBot",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_3",
+    "featured": false,
+    "createdAt": "2026-11-05T20:29:11.801Z",
+    "updatedAt": "2026-11-05T20:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_63",
+    "title": "Street Ronin Brush Heavyweight Boxy Drip Hoodie #63",
+    "price": 92,
+    "originalPrice": 92,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_4",
+    "featured": false,
+    "createdAt": "2026-11-05T21:29:11.801Z",
+    "updatedAt": "2026-11-05T21:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_64",
+    "title": "Demon Mask Pop Art Heavyweight Boxy Drip Hoodie #64",
+    "price": 98,
+    "originalPrice": 130,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_5",
+    "featured": false,
+    "createdAt": "2026-11-05T22:29:11.801Z",
+    "updatedAt": "2026-11-05T22:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_65",
+    "title": "Rogue Clan Distressed Heavyweight Boxy Drip Hoodie #65",
+    "price": 104,
+    "originalPrice": 104,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Rogue Clan Distressed",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Rogue Clan Distressed collection. Built with armor-grade 450 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 450,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RogueClan",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_1",
+    "featured": false,
+    "createdAt": "2026-11-05T23:29:11.801Z",
+    "updatedAt": "2026-11-05T23:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_66",
+    "title": "KhanhBro Signature Drip Heavyweight Boxy Drip Hoodie #66",
+    "price": 110,
+    "originalPrice": 110,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Fall/Winter 2026 heavyweight capsule from the KhanhBro Signature Drip collection. Built with armor-grade 490 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 490,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "KhanhBro",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_2",
+    "featured": false,
+    "createdAt": "2026-11-06T00:29:11.801Z",
+    "updatedAt": "2026-11-06T00:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_67",
+    "title": "Cyber Toon Glitch Heavyweight Boxy Drip Hoodie #67",
+    "price": 116,
+    "originalPrice": 116,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Cyber Toon Glitch",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Cyber Toon Glitch collection. Built with armor-grade 460 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 460,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PopGlitch",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_3",
+    "featured": false,
+    "createdAt": "2026-11-06T01:29:11.801Z",
+    "updatedAt": "2026-11-06T01:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_68",
+    "title": "Mecha Bot Evolution Heavyweight Boxy Drip Hoodie #68",
+    "price": 122,
+    "originalPrice": 162,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Mecha Bot Evolution",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Mecha Bot Evolution collection. Built with armor-grade 480 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 480,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "MechaBot",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_4",
+    "featured": false,
+    "createdAt": "2026-11-06T02:29:11.801Z",
+    "updatedAt": "2026-11-06T02:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_69",
+    "title": "Street Ronin Brush Heavyweight Boxy Drip Hoodie #69",
+    "price": 128,
+    "originalPrice": 128,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_5",
+    "featured": false,
+    "createdAt": "2026-11-06T03:29:11.801Z",
+    "updatedAt": "2026-11-06T03:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_70",
+    "title": "Demon Mask Pop Art Heavyweight Boxy Drip Hoodie #70",
+    "price": 92,
+    "originalPrice": 92,
+    "category": "hoodies",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "hoodies"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_hoodies_1",
+    "featured": false,
+    "createdAt": "2026-11-06T04:29:11.801Z",
+    "updatedAt": "2026-11-06T04:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_71",
+    "title": "Rogue Clan Distressed Heavy French Terry Cargo Pants #71",
+    "price": 90,
+    "originalPrice": 90,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Rogue Clan Distressed",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Rogue Clan Distressed collection. Built with armor-grade 450 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 450,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RogueClan",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_2",
+    "featured": false,
+    "createdAt": "2026-11-06T05:29:11.801Z",
+    "updatedAt": "2026-11-06T05:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_72",
+    "title": "KhanhBro Signature Drip Heavy French Terry Cargo Pants #72",
+    "price": 96,
+    "originalPrice": 128,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Fall/Winter 2026 heavyweight capsule from the KhanhBro Signature Drip collection. Built with armor-grade 490 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 490,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "KhanhBro",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_3",
+    "featured": false,
+    "createdAt": "2026-11-06T06:29:11.801Z",
+    "updatedAt": "2026-11-06T06:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_73",
+    "title": "Cyber Toon Glitch Heavy French Terry Cargo Pants #73",
+    "price": 102,
+    "originalPrice": 102,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Cyber Toon Glitch",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Cyber Toon Glitch collection. Built with armor-grade 460 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 460,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PopGlitch",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_4",
+    "featured": false,
+    "createdAt": "2026-11-06T07:29:11.801Z",
+    "updatedAt": "2026-11-06T07:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_74",
+    "title": "Mecha Bot Evolution Heavy French Terry Cargo Pants #74",
+    "price": 108,
+    "originalPrice": 108,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Mecha Bot Evolution",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Mecha Bot Evolution collection. Built with armor-grade 480 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 480,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "MechaBot",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_5",
+    "featured": false,
+    "createdAt": "2026-11-06T08:29:11.801Z",
+    "updatedAt": "2026-11-06T08:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_75",
+    "title": "Street Ronin Brush Heavy French Terry Cargo Pants #75",
+    "price": 114,
+    "originalPrice": 114,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_1",
+    "featured": false,
+    "createdAt": "2026-11-06T09:29:11.801Z",
+    "updatedAt": "2026-11-06T09:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_76",
+    "title": "Demon Mask Pop Art Heavy French Terry Cargo Pants #76",
+    "price": 120,
+    "originalPrice": 160,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_2",
+    "featured": false,
+    "createdAt": "2026-11-06T10:29:11.801Z",
+    "updatedAt": "2026-11-06T10:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_77",
+    "title": "Rogue Clan Distressed Heavy French Terry Cargo Pants #77",
+    "price": 84,
+    "originalPrice": 84,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Rogue Clan Distressed",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Rogue Clan Distressed collection. Built with armor-grade 450 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 450,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RogueClan",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_3",
+    "featured": false,
+    "createdAt": "2026-11-06T11:29:11.801Z",
+    "updatedAt": "2026-11-06T11:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_78",
+    "title": "KhanhBro Signature Drip Heavy French Terry Cargo Pants #78",
+    "price": 90,
+    "originalPrice": 90,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Fall/Winter 2026 heavyweight capsule from the KhanhBro Signature Drip collection. Built with armor-grade 490 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 490,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "KhanhBro",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_4",
+    "featured": false,
+    "createdAt": "2026-11-06T12:29:11.801Z",
+    "updatedAt": "2026-11-06T12:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_79",
+    "title": "Cyber Toon Glitch Heavy French Terry Cargo Pants #79",
+    "price": 96,
+    "originalPrice": 96,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Cyber Toon Glitch",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Cyber Toon Glitch collection. Built with armor-grade 460 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 460,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PopGlitch",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_5",
+    "featured": false,
+    "createdAt": "2026-11-06T13:29:11.801Z",
+    "updatedAt": "2026-11-06T13:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_80",
+    "title": "Mecha Bot Evolution Heavy French Terry Cargo Pants #80",
+    "price": 102,
+    "originalPrice": 136,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Mecha Bot Evolution",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Mecha Bot Evolution collection. Built with armor-grade 480 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 480,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "MechaBot",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_1",
+    "featured": false,
+    "createdAt": "2026-11-06T14:29:11.801Z",
+    "updatedAt": "2026-11-06T14:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_81",
+    "title": "Street Ronin Brush Heavy French Terry Cargo Pants #81",
+    "price": 108,
+    "originalPrice": 108,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_2",
+    "featured": false,
+    "createdAt": "2026-11-06T15:29:11.801Z",
+    "updatedAt": "2026-11-06T15:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_82",
+    "title": "Demon Mask Pop Art Heavy French Terry Cargo Pants #82",
+    "price": 114,
+    "originalPrice": 114,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_3",
+    "featured": false,
+    "createdAt": "2026-11-06T16:29:11.801Z",
+    "updatedAt": "2026-11-06T16:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_83",
+    "title": "Rogue Clan Distressed Heavy French Terry Cargo Pants #83",
+    "price": 120,
+    "originalPrice": 120,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Rogue Clan Distressed",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Rogue Clan Distressed collection. Built with armor-grade 450 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 450,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RogueClan",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_4",
+    "featured": false,
+    "createdAt": "2026-11-06T17:29:11.801Z",
+    "updatedAt": "2026-11-06T17:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_84",
+    "title": "KhanhBro Signature Drip Heavy French Terry Cargo Pants #84",
+    "price": 84,
+    "originalPrice": 112,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Fall/Winter 2026 heavyweight capsule from the KhanhBro Signature Drip collection. Built with armor-grade 490 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 490,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "KhanhBro",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_5",
+    "featured": false,
+    "createdAt": "2026-11-06T18:29:11.801Z",
+    "updatedAt": "2026-11-06T18:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_85",
+    "title": "Cyber Toon Glitch Heavy French Terry Cargo Pants #85",
+    "price": 90,
+    "originalPrice": 90,
+    "category": "bottoms",
+    "season": "FW26",
+    "collectionName": "Cyber Toon Glitch",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Cyber Toon Glitch collection. Built with armor-grade 460 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 460,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PopGlitch",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "bottoms"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "bottom",
+    "mascotAsset": "asset_fw_bottoms_1",
+    "featured": false,
+    "createdAt": "2026-11-06T19:29:11.801Z",
+    "updatedAt": "2026-11-06T19:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_86",
+    "title": "Mecha Bot Evolution Quilted Boxy Puffer Down Jacket #86",
+    "price": 157,
+    "originalPrice": 157,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Mecha Bot Evolution",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Mecha Bot Evolution collection. Built with armor-grade 480 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 480,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "MechaBot",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_2",
+    "featured": false,
+    "createdAt": "2026-11-06T20:29:11.801Z",
+    "updatedAt": "2026-11-06T20:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_87",
+    "title": "Street Ronin Brush Quilted Boxy Puffer Down Jacket #87",
+    "price": 163,
+    "originalPrice": 163,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_3",
+    "featured": false,
+    "createdAt": "2026-11-06T21:29:11.801Z",
+    "updatedAt": "2026-11-06T21:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_88",
+    "title": "Demon Mask Pop Art Quilted Boxy Puffer Down Jacket #88",
+    "price": 169,
+    "originalPrice": 225,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_4",
+    "featured": false,
+    "createdAt": "2026-11-06T22:29:11.801Z",
+    "updatedAt": "2026-11-06T22:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_89",
+    "title": "Rogue Clan Distressed Quilted Boxy Puffer Down Jacket #89",
+    "price": 175,
+    "originalPrice": 175,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Rogue Clan Distressed",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Rogue Clan Distressed collection. Built with armor-grade 450 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 450,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RogueClan",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_5",
+    "featured": false,
+    "createdAt": "2026-11-06T23:29:11.801Z",
+    "updatedAt": "2026-11-06T23:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_90",
+    "title": "KhanhBro Signature Drip Quilted Boxy Puffer Down Jacket #90",
+    "price": 181,
+    "originalPrice": 181,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Fall/Winter 2026 heavyweight capsule from the KhanhBro Signature Drip collection. Built with armor-grade 490 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 490,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "KhanhBro",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_1",
+    "featured": false,
+    "createdAt": "2026-11-07T00:29:11.801Z",
+    "updatedAt": "2026-11-07T00:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_91",
+    "title": "Cyber Toon Glitch Quilted Boxy Puffer Down Jacket #91",
+    "price": 145,
+    "originalPrice": 145,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Cyber Toon Glitch",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Cyber Toon Glitch collection. Built with armor-grade 460 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 460,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PopGlitch",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_2",
+    "featured": false,
+    "createdAt": "2026-11-07T01:29:11.801Z",
+    "updatedAt": "2026-11-07T01:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_92",
+    "title": "Mecha Bot Evolution Quilted Boxy Puffer Down Jacket #92",
+    "price": 151,
+    "originalPrice": 201,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Mecha Bot Evolution",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Mecha Bot Evolution collection. Built with armor-grade 480 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 480,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "MechaBot",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_3",
+    "featured": false,
+    "createdAt": "2026-11-07T02:29:11.801Z",
+    "updatedAt": "2026-11-07T02:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_93",
+    "title": "Street Ronin Brush Quilted Boxy Puffer Down Jacket #93",
+    "price": 157,
+    "originalPrice": 157,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_4",
+    "featured": false,
+    "createdAt": "2026-11-07T03:29:11.801Z",
+    "updatedAt": "2026-11-07T03:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_94",
+    "title": "Demon Mask Pop Art Quilted Boxy Puffer Down Jacket #94",
+    "price": 163,
+    "originalPrice": 163,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_5",
+    "featured": false,
+    "createdAt": "2026-11-07T04:29:11.801Z",
+    "updatedAt": "2026-11-07T04:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_95",
+    "title": "Rogue Clan Distressed Quilted Boxy Puffer Down Jacket #95",
+    "price": 169,
+    "originalPrice": 169,
+    "category": "outerwear",
+    "season": "FW26",
+    "collectionName": "Rogue Clan Distressed",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Rogue Clan Distressed collection. Built with armor-grade 450 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892268/fashionwekk/masterpieces/rogue_clan_distressed.png"
+    ],
+    "colors": [
+      "Neon Purple",
+      "Hyper Green"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "gsm": 450,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RogueClan",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "outerwear"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "top",
+    "mascotAsset": "asset_fw_outerwear_1",
+    "featured": false,
+    "createdAt": "2026-11-07T05:29:11.801Z",
+    "updatedAt": "2026-11-07T05:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_96",
+    "title": "KhanhBro Signature Drip Heavy Ribbed Knit Beanie #96",
+    "price": 65,
+    "originalPrice": 86,
+    "category": "accessories",
+    "season": "FW26",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Fall/Winter 2026 heavyweight capsule from the KhanhBro Signature Drip collection. Built with armor-grade 490 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892321/fashionwekk/masterpieces/khanhbro_hero_signature_drip.png"
+    ],
+    "colors": [
+      "Graphite Grey",
+      "Comic Yellow"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 490,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "KhanhBro",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "head",
+    "mascotAsset": "asset_fw_accessories_2",
+    "featured": false,
+    "createdAt": "2026-11-07T06:29:11.801Z",
+    "updatedAt": "2026-11-07T06:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_97",
+    "title": "Cyber Toon Glitch Heavy Ribbed Knit Beanie #97",
+    "price": 71,
+    "originalPrice": 71,
+    "category": "accessories",
+    "season": "FW26",
+    "collectionName": "Cyber Toon Glitch",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Cyber Toon Glitch collection. Built with armor-grade 460 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891701/fashionwekk/masterpieces/cyber_toon_glitch_hero.png"
+    ],
+    "colors": [
+      "Onyx Black",
+      "Sunset Coral"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 460,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "PopGlitch",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "head",
+    "mascotAsset": "asset_fw_accessories_3",
+    "featured": false,
+    "createdAt": "2026-11-07T07:29:11.801Z",
+    "updatedAt": "2026-11-07T07:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_98",
+    "title": "Mecha Bot Evolution Heavy Ribbed Knit Beanie #98",
+    "price": 35,
+    "originalPrice": 35,
+    "category": "accessories",
+    "season": "FW26",
+    "collectionName": "Mecha Bot Evolution",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Mecha Bot Evolution collection. Built with armor-grade 480 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891719/fashionwekk/masterpieces/mecha_bot_evolution.png"
+    ],
+    "colors": [
+      "Washed Charcoal",
+      "Electric Cyan"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 480,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "MechaBot",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 5,
+    "reviewCount": 45,
+    "mascotSlot": "head",
+    "mascotAsset": "asset_fw_accessories_4",
+    "featured": false,
+    "createdAt": "2026-11-07T08:29:11.801Z",
+    "updatedAt": "2026-11-07T08:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_99",
+    "title": "Street Ronin Brush Tactical Fidlock Chest Rig Bag #99",
+    "price": 41,
+    "originalPrice": 41,
+    "category": "accessories",
+    "season": "FW26",
+    "collectionName": "Street Ronin Brush",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Street Ronin Brush collection. Built with armor-grade 500 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793891754/fashionwekk/masterpieces/street_ronin_brush.png"
+    ],
+    "colors": [
+      "Deep Lavender",
+      "Shadow Black"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 500,
+    "stock": 28,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "RoninBrush",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "mascotSlot": "accessory",
+    "mascotAsset": "asset_fw_accessories_5",
+    "featured": false,
+    "createdAt": "2026-11-07T09:29:11.801Z",
+    "updatedAt": "2026-11-07T09:29:11.801Z"
+  },
+  {
+    "_id": "prod_fw_100",
+    "title": "Demon Mask Pop Art Tactical Fidlock Chest Rig Bag #100",
+    "price": 47,
+    "originalPrice": 63,
+    "category": "accessories",
+    "season": "FW26",
+    "collectionName": "Demon Mask Pop Art",
+    "description": "Fall/Winter 2026 heavyweight capsule from the Demon Mask Pop Art collection. Built with armor-grade 470 GSM double-brushed French terry and water-repellent shell. Features custom embroidered wax seal patches, thick ribbed cuffs, drop-shoulder tailoring, and signature KhanhBro pop-art graphics.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892193/fashionwekk/masterpieces/demon_mask_popart.png"
+    ],
+    "colors": [
+      "Bone White",
+      "Pop Magenta"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 470,
+    "stock": 28,
+    "isFlashSale": true,
+    "discountPercent": 25,
+    "tags": [
+      "DemonPop",
+      "FW26",
+      "FallWinter",
+      "Heavyweight",
+      "Streetwear",
+      "FashionWekk",
+      "KhanhBro",
+      "accessories"
+    ],
+    "rating": 4.9,
+    "reviewCount": 45,
+    "mascotSlot": "accessory",
+    "mascotAsset": "asset_fw_accessories_1",
+    "featured": false,
+    "createdAt": "2026-11-07T10:29:11.801Z",
+    "updatedAt": "2026-11-07T10:29:11.801Z"
+  },
+  {
+    "_id": "prod_collectible_1",
+    "title": "KhanhBro 3D Liquid Drip Mascot Art Toy 28cm (Limited 100 Pcs)",
+    "price": 120,
+    "originalPrice": 150,
+    "category": "collectibles",
+    "season": "All-Season",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Numbered atelier art collector drop directed by KhanhBro. Stamped with authentic gold wax emblem, custom collector wooden presentation crate, and holographic verification certificate.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892956/fashionwekk/collectibles/collectible_khanhbro_vinyl_toy.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892956/fashionwekk/collectibles/collectible_khanhbro_vinyl_toy.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892956/fashionwekk/collectibles/collectible_khanhbro_vinyl_toy.png"
+    ],
+    "colors": [
+      "Collector Edition Monochrome",
+      "Neon Gold Splash"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 0,
+    "stock": 15,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "Collectible",
+      "ArtToy",
+      "SkateDeck",
+      "VIP",
+      "KhanhBro",
+      "FashionWekk"
+    ],
+    "rating": 5,
+    "reviewCount": 42,
+    "mascotSlot": "accessory",
+    "mascotAsset": "asset_collectible_1",
+    "featured": true,
+    "createdAt": "2026-11-07T15:29:11.802Z",
+    "updatedAt": "2026-11-07T15:29:11.802Z"
+  },
+  {
+    "_id": "prod_collectible_2",
+    "title": "Cyber Toon Glitch 8-Ply Canadian Maple Skate Deck",
+    "price": 165,
+    "originalPrice": 205,
+    "category": "collectibles",
+    "season": "All-Season",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Numbered atelier art collector drop directed by KhanhBro. Stamped with authentic gold wax emblem, custom collector wooden presentation crate, and holographic verification certificate.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793895481/fashionwekk/accessories/accessory_demon_skate_deck.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793895481/fashionwekk/accessories/accessory_demon_skate_deck.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793895481/fashionwekk/accessories/accessory_demon_skate_deck.png"
+    ],
+    "colors": [
+      "Collector Edition Monochrome",
+      "Neon Gold Splash"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 0,
+    "stock": 15,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "Collectible",
+      "ArtToy",
+      "SkateDeck",
+      "VIP",
+      "KhanhBro",
+      "FashionWekk"
+    ],
+    "rating": 5,
+    "reviewCount": 42,
+    "mascotSlot": "accessory",
+    "mascotAsset": "asset_collectible_2",
+    "featured": true,
+    "createdAt": "2026-11-07T15:29:11.802Z",
+    "updatedAt": "2026-11-07T15:29:11.802Z"
+  },
+  {
+    "_id": "prod_collectible_3",
+    "title": "Demon Mask Pop Art Hand-Painted Resin Bust Statue",
+    "price": 210,
+    "originalPrice": 260,
+    "category": "collectibles",
+    "season": "All-Season",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Numbered atelier art collector drop directed by KhanhBro. Stamped with authentic gold wax emblem, custom collector wooden presentation crate, and holographic verification certificate.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793892998/fashionwekk/collectibles/collectible_demon_resin_bust.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793892998/fashionwekk/collectibles/collectible_demon_resin_bust.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793892998/fashionwekk/collectibles/collectible_demon_resin_bust.png"
+    ],
+    "colors": [
+      "Collector Edition Monochrome",
+      "Neon Gold Splash"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 0,
+    "stock": 15,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "Collectible",
+      "ArtToy",
+      "SkateDeck",
+      "VIP",
+      "KhanhBro",
+      "FashionWekk"
+    ],
+    "rating": 5,
+    "reviewCount": 42,
+    "mascotSlot": "accessory",
+    "mascotAsset": "asset_collectible_3",
+    "featured": true,
+    "createdAt": "2026-11-07T15:29:11.802Z",
+    "updatedAt": "2026-11-07T15:29:11.802Z"
+  },
+  {
+    "_id": "prod_collectible_4",
+    "title": "Mecha Bot Evolution Collector Vinyl Figure Metallic Edition",
+    "price": 255,
+    "originalPrice": 315,
+    "category": "collectibles",
+    "season": "All-Season",
+    "collectionName": "KhanhBro Signature Drip",
+    "description": "Numbered atelier art collector drop directed by KhanhBro. Stamped with authentic gold wax emblem, custom collector wooden presentation crate, and holographic verification certificate.",
+    "images": [
+      "https://res.cloudinary.com/dptpb60p7/image/upload/f_auto,q_auto/v1793895619/fashionwekk/accessories/accessory_pixel_companion_plush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_fill,w_800,h_1000,g_auto/f_auto,q_auto/v1793895619/fashionwekk/accessories/accessory_pixel_companion_plush.png",
+      "https://res.cloudinary.com/dptpb60p7/image/upload/c_crop,w_600,h_600,g_center/f_auto,q_auto/v1793895619/fashionwekk/accessories/accessory_pixel_companion_plush.png"
+    ],
+    "colors": [
+      "Collector Edition Monochrome",
+      "Neon Gold Splash"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "gsm": 0,
+    "stock": 15,
+    "isFlashSale": false,
+    "discountPercent": 0,
+    "tags": [
+      "Collectible",
+      "ArtToy",
+      "SkateDeck",
+      "VIP",
+      "KhanhBro",
+      "FashionWekk"
+    ],
+    "rating": 5,
+    "reviewCount": 42,
+    "mascotSlot": "accessory",
+    "mascotAsset": "asset_collectible_4",
+    "featured": true,
+    "createdAt": "2026-11-07T15:29:11.802Z",
+    "updatedAt": "2026-11-07T15:29:11.802Z"
+  }
+]

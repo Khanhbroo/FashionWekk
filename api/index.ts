@@ -16,32 +16,28 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Ensure MongoDB connection before processing any request
+// Ensure MongoDB connection attempt without blocking request execution
 app.use(async (_req: Request, _res: Response, next: NextFunction) => {
   try {
     await connectDB();
-  } catch (err) {
-    console.error('Failed to establish MongoDB connection in Vercel serverless function:', err);
+  } catch (err: any) {
+    console.warn('MongoDB connection deferred:', err.message);
   }
   next();
 });
 
-// Mount API routes
-app.use('/api/products', productRoutes);
-app.use('/api/orders', orderRoutes);
-app.use('/api/coupons', couponRoutes);
+// Support both /api/path and /path in case Vercel rewrite strips or preserves the /api prefix
+app.use(['/api/products', '/products'], productRoutes);
+app.use(['/api/orders', '/orders'], orderRoutes);
+app.use(['/api/coupons', '/coupons'], couponRoutes);
 
-app.get('/api/health', (_req: Request, res: Response) => {
+app.get(['/api/health', '/health'], (_req: Request, res: Response) => {
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
     service: 'FashionWekk Vercel Serverless API',
     environment: 'production',
   });
-});
-
-app.use('/api/*', (_req: Request, res: Response) => {
-  res.status(404).json({ success: false, message: 'API endpoint not found' });
 });
 
 app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {

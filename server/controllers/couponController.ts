@@ -1,5 +1,74 @@
 import { Request, Response } from 'express';
+import mongoose from 'mongoose';
 import Coupon from '../models/Coupon';
+
+const FALLBACK_COUPONS = [
+  {
+    _id: 'coupon_toon10',
+    code: 'TOON10',
+    discountPercent: 10,
+    fixedDiscount: 0,
+    isFreeShipping: false,
+    minOrderValue: 0,
+    description: 'Instant 10% OFF on all cartoon streetwear drops',
+    expiryDate: new Date('2028-12-31'),
+    usageLimit: 0,
+    timesUsed: 0,
+    isActive: true,
+  },
+  {
+    _id: 'coupon_freeship',
+    code: 'FREESHIP',
+    discountPercent: 0,
+    fixedDiscount: 0,
+    isFreeShipping: true,
+    minOrderValue: 75,
+    description: 'Free Worldwide Express Shipping on orders over $75',
+    expiryDate: new Date('2028-12-31'),
+    usageLimit: 0,
+    timesUsed: 0,
+    isActive: true,
+  },
+  {
+    _id: 'coupon_cyber20',
+    code: 'CYBER20',
+    discountPercent: 20,
+    fixedDiscount: 0,
+    isFreeShipping: false,
+    minOrderValue: 120,
+    description: '20% Mega Pop Discount on orders over $120',
+    expiryDate: new Date('2028-12-31'),
+    usageLimit: 0,
+    timesUsed: 0,
+    isActive: true,
+  },
+  {
+    _id: 'coupon_neotokyo30',
+    code: 'NEOTOKYO30',
+    discountPercent: 30,
+    fixedDiscount: 0,
+    isFreeShipping: false,
+    minOrderValue: 200,
+    description: '30% VIP Collector pass for elite streetwear hauls',
+    expiryDate: new Date('2028-12-31'),
+    usageLimit: 0,
+    timesUsed: 0,
+    isActive: true,
+  },
+  {
+    _id: 'coupon_luckyspin',
+    code: 'LUCKYSPIN',
+    discountPercent: 15,
+    fixedDiscount: 0,
+    isFreeShipping: false,
+    minOrderValue: 50,
+    description: 'Mystery Wheel Lucky Spin 15% Pop Discount',
+    expiryDate: new Date('2028-12-31'),
+    usageLimit: 0,
+    timesUsed: 0,
+    isActive: true,
+  },
+];
 
 export const validateCoupon = async (req: Request, res: Response) => {
   try {
@@ -10,7 +79,19 @@ export const validateCoupon = async (req: Request, res: Response) => {
     }
 
     const cleanCode = String(code).trim().toUpperCase();
-    const coupon = await Coupon.findOne({ code: cleanCode });
+    let coupon: any = null;
+
+    if (mongoose.connection.readyState >= 1) {
+      try {
+        coupon = await Coupon.findOne({ code: cleanCode });
+      } catch (err) {
+        // Fall back to memory list
+      }
+    }
+
+    if (!coupon) {
+      coupon = FALLBACK_COUPONS.find((c) => c.code === cleanCode);
+    }
 
     if (!coupon) {
       return res.status(404).json({ success: false, message: `Coupon code '${cleanCode}' does not exist` });
@@ -55,7 +136,7 @@ export const validateCoupon = async (req: Request, res: Response) => {
       discountAmount = Math.min(coupon.fixedDiscount, cartTotal);
     }
 
-    res.json({
+    return res.json({
       success: true,
       message: 'Coupon successfully validated and applied!',
       data: {
@@ -67,23 +148,26 @@ export const validateCoupon = async (req: Request, res: Response) => {
         minOrderValue: coupon.minOrderValue,
         discountAmount: Math.round(discountAmount * 100) / 100,
         description: coupon.description,
-        expiryDate: coupon.expiryDate.toISOString(),
+        expiryDate: new Date(coupon.expiryDate).toISOString(),
         usageLimit: coupon.usageLimit,
         timesUsed: coupon.timesUsed,
         isActive: coupon.isActive,
       },
     });
   } catch (error: any) {
-    res.status(500).json({ success: false, message: error.message });
+    return res.status(500).json({ success: false, message: error.message });
   }
 };
 
 export const getCoupons = async (_req: Request, res: Response) => {
   try {
-    const coupons = await Coupon.find().sort({ createdAt: -1 });
-    res.json({ success: true, count: coupons.length, data: coupons });
+    if (mongoose.connection.readyState >= 1) {
+      const coupons = await Coupon.find().sort({ createdAt: -1 });
+      return res.json({ success: true, count: coupons.length, data: coupons });
+    }
+    return res.json({ success: true, count: FALLBACK_COUPONS.length, data: FALLBACK_COUPONS });
   } catch (error: any) {
-    res.status(500).json({ success: false, message: error.message });
+    return res.json({ success: true, count: FALLBACK_COUPONS.length, data: FALLBACK_COUPONS });
   }
 };
 
