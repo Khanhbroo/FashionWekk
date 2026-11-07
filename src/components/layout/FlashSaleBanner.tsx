@@ -21,10 +21,13 @@ export const FlashSaleBanner: React.FC = () => {
 
   const format = (n: number) => String(n).padStart(2, '0');
 
-  const marqueeText = `COLLUSION BY KHANHBRO // CARTOON POP-ART ATELIER • 480 GSM HEAVYWEIGHT FRENCH TERRY • WORLDWIDE EXPRESS DISPATCH • LIMITED VAULT RELEASE • UP TO 30% OFF • ENDS IN ${format(timeLeft.hours)}H:${format(timeLeft.minutes)}M:${format(timeLeft.seconds)}S • `;
+  const marqueeText = `FASHIONWEKK ATELIER // DIRECTED BY KHANHBRO • 480 GSM HEAVYWEIGHT TERRY • WORLDWIDE EXPRESS AIR DISPATCH • CAPSULE 01 NO RESTOCK • ENDS IN ${format(timeLeft.hours)}H:${format(timeLeft.minutes)}M:${format(timeLeft.seconds)}S • `;
 
   return (
-    <aside aria-label="Promotion Ticker" className="relative z-50 bg-[#D4FF00] text-black border-b border-black/15 overflow-hidden py-2 select-none">
+    <aside
+      aria-label="Promotion Ticker"
+      className="relative z-50 bg-[#D4FF00] text-[#0A0A0C] border-b border-[#0A0A0C] overflow-hidden py-1.5 select-none"
+    >
       <div className="flex overflow-hidden">
         <div className="animate-marquee whitespace-nowrap font-mono text-[11px] sm:text-xs font-black tracking-widest uppercase flex items-center gap-6">
           <span>{marqueeText}</span>
