@@ -13,7 +13,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![MongoDB Atlas](https://img.shields.io/badge/MongoDB-Atlas_Mongoose-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
 [![Cloudinary](https://img.shields.io/badge/Cloudinary-CDN_Optimized-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)](https://cloudinary.com)
-[![Tests](https://img.shields.io/badge/Vitest-36_Passing-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)](https://vitest.dev)
+[![CI](https://img.shields.io/github/actions/workflow/status/Khanhbroo/FashionWekk/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI)](https://github.com/Khanhbroo/FashionWekk/actions/workflows/ci.yml)
+[![Tests](https://img.shields.io/badge/Vitest-55_Passing-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)](https://vitest.dev)
+[![Docker](https://img.shields.io/badge/Docker-Compose_Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#-docker)
 
 </div>
 
@@ -82,7 +84,7 @@ flowchart TD
     end
 
     subgraph Serverless ["Backend API (Vercel Serverless / Express)"]
-        API["Express App (/api/index.ts)"]
+        API["Express App (api/index.js bundled from server/serverless.ts)"]
         ProdCtrl["Product Controller"]
         OrderCtrl["Order Controller"]
         CouponCtrl["Coupon Controller"]
@@ -114,8 +116,9 @@ flowchart TD
 
 ```text
 FashionWekk/
+├── .github/workflows/ci.yml    # CI: typecheck, tests, build and Docker image builds
 ├── api/                        # Vercel serverless entrypoint
-│   └── index.ts                # Express serverless handler & route dispatcher
+│   └── index.js                # Bundle generated from server/serverless.ts by esbuild
 ├── docs/                       # Project specifications and architecture
 │   └── toon_drip_master_specification.md # Master atelier specification
 ├── public/                     # Static assets, fallback media, and icons
@@ -147,12 +150,17 @@ FashionWekk/
 │   ├── index.css               # Tailwind CSS v4 design tokens & theme classes
 │   └── main.tsx                # Client DOM entrypoint
 ├── tests/                      # Automated test suite (Vitest)
-│   ├── cart.test.ts            # Shopping bag calculations & persistence
-│   ├── coupon.test.ts          # Coupon discount rules & expiry checks
+│   ├── helpers/memoryStorage.ts # In-memory localStorage so Zustand stores run in Node
+│   ├── api_serverless.test.ts  # Serverless Express app: health check & catalog fallback
+│   ├── cart.test.ts            # useCartStore totals, shipping threshold, coupons, line merging
+│   ├── coupon.test.ts          # validateCoupon controller: fallback catalog & database coupons
 │   ├── imageOptimizer.test.ts  # Cloudinary URL transform tests
-│   ├── mascot.test.ts          # 4-slot dress-up mechanics & slot taxonomy
+│   ├── mascot.test.ts          # useMascotStore equip/toggle/bounce & slot taxonomy
 │   ├── navigation_collection.test.ts # Lookbook routes & collection filters
-│   └── stock_order.test.ts     # Stock constraints & order processing
+│   └── stock_order.test.ts     # createOrder controller: stock checks, stock decrement, coupon usage
+├── docker/nginx.conf           # nginx config used by the production web image
+├── Dockerfile                  # Multi-stage image: dev, api and web targets
+├── docker-compose.yml          # MongoDB + dev app, or MongoDB + api + web (prod profile)
 ├── package.json                # Project dependencies & scripts
 ├── tsconfig.json               # TypeScript strict configuration
 ├── vercel.json                 # Vercel deployment rewrites & build configuration
@@ -163,23 +171,26 @@ FashionWekk/
 
 ## 🧪 Automated Test Suite (Vitest)
 
-FashionWekk enforces Test-Driven Development (TDD) across all business logic:
+The tests import the production modules directly (stores, controllers, utilities) and mock only the Mongoose models, so a change in the real business logic fails the suite:
 
 ```bash
 npm test
 ```
 
 ```text
- ✓ tests/cart.test.ts (5 tests)
- ✓ tests/stock_order.test.ts (4 tests)
- ✓ tests/coupon.test.ts (7 tests)
  ✓ tests/imageOptimizer.test.ts (5 tests)
- ✓ tests/mascot.test.ts (11 tests)
+ ✓ tests/stock_order.test.ts (6 tests)
+ ✓ tests/cart.test.ts (13 tests)
+ ✓ tests/mascot.test.ts (14 tests)
  ✓ tests/navigation_collection.test.ts (4 tests)
+ ✓ tests/coupon.test.ts (10 tests)
+ ✓ tests/api_serverless.test.ts (3 tests)
 
- Test Files  6 passed (6)
-      Tests  36 passed (36)
+ Test Files  7 passed (7)
+      Tests  55 passed (55)
 ```
+
+The same checks run on every push and pull request through [GitHub Actions](.github/workflows/ci.yml): `npm run lint` (TypeScript typecheck), `npm test`, `npm run build`, and a Docker image build.
 
 ---
 
@@ -203,7 +214,6 @@ Create a `.env` file in the root directory:
 ```env
 PORT=5000
 MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/fashionwekk?retryWrites=true&w=majority
-VITE_API_URL=http://localhost:5000/api
 CLOUDINARY_CLOUD_NAME=dptpb60p7
 CLOUDINARY_API_KEY=your_key_here
 CLOUDINARY_API_SECRET=your_secret_here
@@ -225,9 +235,29 @@ npm run dev
 
 ---
 
+## 🐳 Docker
+
+Docker is optional. Without it, use the Node.js setup above.
+
+**Development with hot reload** (MongoDB + app on `http://localhost:5173`, API on `http://localhost:5000`):
+
+```bash
+docker compose --profile dev up --build
+```
+
+**Production like stack** (MongoDB + Express API + nginx serving the built frontend on `http://localhost:8080`):
+
+```bash
+docker compose --profile prod up --build
+```
+
+The `Dockerfile` has `dev`, `api` and `web` targets sharing one dependency layer. Seed the container database with `docker compose exec app npm run seed` when running the dev profile.
+
+---
+
 ## 🚀 Deployment (Vercel Serverless)
 
-The project includes zero-config serverless support via `vercel.json` and `api/index.ts`:
+The project includes serverless support via `vercel.json` and `api/index.js` (generated from `server/serverless.ts` by `npm run build:server`):
 
 1. Import the repository into [Vercel](https://vercel.com/new).
 2. Configure **Environment Variables**:
