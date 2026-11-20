@@ -1,4 +1,7 @@
-import { describe, it, expect } from 'vitest';
+import './helpers/memoryStorage';
+import { afterEach, beforeEach, describe, it, expect, vi } from 'vitest';
+import { useMascotStore } from '../src/stores/mascotStore';
+import type { Product } from '../src/types';
 import {
   MascotSlot,
   getMascotSlotForCategory,
@@ -7,87 +10,101 @@ import {
   MASCOT_SLOTS,
 } from '../src/features/mascot/mascotLabels';
 
-export interface MascotEquipment {
-  head: string | null;
-  top: string | null;
-  bottom: string | null;
-  accessory: string | null;
-}
+const makeProduct = (overrides: Partial<Product> = {}): Product => ({
+  _id: 'prod_1',
+  title: 'Test Item',
+  price: 50,
+  originalPrice: 50,
+  category: 'hoodies',
+  description: '',
+  images: [],
+  colors: [],
+  sizes: [],
+  gsm: 300,
+  stock: 10,
+  isFlashSale: false,
+  tags: [],
+  rating: 5,
+  reviewCount: 0,
+  ...overrides,
+});
 
-export const equipMascotItem = (
-  current: MascotEquipment,
-  slot: 'head' | 'top' | 'bottom' | 'accessory',
-  assetId: string
-): MascotEquipment => {
-  if (current[slot] === assetId) {
-    return { ...current, [slot]: null };
-  }
-  return { ...current, [slot]: assetId };
-};
-
-describe('mascot dress-up core mechanics', () => {
-  it('should start with default empty equipment', () => {
-    const defaultMascot: MascotEquipment = {
-      head: null,
-      top: null,
-      bottom: null,
-      accessory: null,
-    };
-    expect(defaultMascot.top).toBeNull();
-    expect(defaultMascot.bottom).toBeNull();
+describe('mascot store dress-up mechanics', () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+    useMascotStore.getState().resetMascot();
+    useMascotStore.setState({ bouncingSlot: null });
   });
 
-  it('should equip a hoodie into top slot', () => {
-    const initial: MascotEquipment = {
-      head: null,
-      top: null,
-      bottom: null,
-      accessory: null,
-    };
-    const equipped = equipMascotItem(initial, 'top', 'asset_hoodies_1');
-    expect(equipped.top).toBe('asset_hoodies_1');
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  it('starts with every slot empty', () => {
+    const { equipped } = useMascotStore.getState();
+    expect(equipped).toEqual({ head: null, top: null, bottom: null, accessory: null });
+  });
+
+  it('equips a hoodie into the top slot using its category', () => {
+    const hoodie = makeProduct({ _id: 'hoodie_1', category: 'hoodies' });
+    useMascotStore.getState().equipProduct(hoodie);
+    const { equipped } = useMascotStore.getState();
+    expect(equipped.top?._id).toBe('hoodie_1');
     expect(equipped.bottom).toBeNull();
   });
 
-  it('should replace equipped item when selecting another in same slot', () => {
-    const initial: MascotEquipment = {
-      head: null,
-      top: 'asset_hoodies_1',
-      bottom: null,
-      accessory: null,
-    };
-    const updated = equipMascotItem(initial, 'top', 'asset_tees_3');
-    expect(updated.top).toBe('asset_tees_3');
+  it('prefers an explicit mascot slot over the category', () => {
+    const mask = makeProduct({ _id: 'mask_1', category: 'collectibles', mascotSlot: 'head' });
+    useMascotStore.getState().equipProduct(mask);
+    const { equipped } = useMascotStore.getState();
+    expect(equipped.head?._id).toBe('mask_1');
+    expect(equipped.accessory).toBeNull();
   });
 
-  it('should toggle off if clicking the currently equipped item', () => {
-    const initial: MascotEquipment = {
-      head: 'asset_accessories_1',
-      top: 'asset_hoodies_1',
-      bottom: null,
-      accessory: null,
-    };
-    const toggled = equipMascotItem(initial, 'head', 'asset_accessories_1');
-    expect(toggled.head).toBeNull();
-    expect(toggled.top).toBe('asset_hoodies_1');
+  it('replaces the item when another one targets the same slot', () => {
+    useMascotStore.getState().equipProduct(makeProduct({ _id: 'hoodie_1', category: 'hoodies' }));
+    useMascotStore.getState().equipProduct(makeProduct({ _id: 'tee_3', category: 'tees' }));
+    expect(useMascotStore.getState().equipped.top?._id).toBe('tee_3');
   });
 
-  it('should equip 3D pop-art accessories into accessory and head slots', () => {
-    let mascot: MascotEquipment = {
-      head: null,
-      top: null,
-      bottom: null,
-      accessory: null,
-    };
-    mascot = equipMascotItem(mascot, 'accessory', '/assets/images/pixel_quest_8bit.jpg');
-    mascot = equipMascotItem(mascot, 'head', '/assets/images/demon_mask_popart.jpg');
-    mascot = equipMascotItem(mascot, 'top', '/assets/images/khanhbro_hoodie_sample.jpg');
-    mascot = equipMascotItem(mascot, 'bottom', '/assets/images/mecha_bot_evolution.jpg');
+  it('toggles an item off when the equipped one is selected again', () => {
+    const cap = makeProduct({ _id: 'cap_1', category: 'accessories' });
+    const hoodie = makeProduct({ _id: 'hoodie_1', category: 'hoodies' });
+    useMascotStore.getState().equipProduct(cap);
+    useMascotStore.getState().equipProduct(hoodie);
+    useMascotStore.getState().equipProduct(cap);
+    const { equipped } = useMascotStore.getState();
+    expect(equipped.head).toBeNull();
+    expect(equipped.top?._id).toBe('hoodie_1');
+  });
 
-    expect(mascot.accessory).toBe('/assets/images/pixel_quest_8bit.jpg');
-    expect(mascot.head).toBe('/assets/images/demon_mask_popart.jpg');
-    expect(mascot.top).toBe('/assets/images/khanhbro_hoodie_sample.jpg');
-    expect(mascot.bottom).toBe('/assets/images/mecha_bot_evolution.jpg');
+  it('fills all four slots from different categories', () => {
+    const store = useMascotStore.getState();
+    store.equipProduct(makeProduct({ _id: 'toy', category: 'collectibles' }));
+    store.equipProduct(makeProduct({ _id: 'beanie', category: 'accessories' }));
+    store.equipProduct(makeProduct({ _id: 'jacket', category: 'outerwear' }));
+    store.equipProduct(makeProduct({ _id: 'cargo', category: 'bottoms' }));
+    const { equipped } = useMascotStore.getState();
+    expect(equipped.accessory?._id).toBe('toy');
+    expect(equipped.head?._id).toBe('beanie');
+    expect(equipped.top?._id).toBe('jacket');
+    expect(equipped.bottom?._id).toBe('cargo');
+  });
+
+  it('marks the slot as bouncing and clears it after the animation window', () => {
+    useMascotStore.getState().equipProduct(makeProduct({ category: 'bottoms' }));
+    expect(useMascotStore.getState().bouncingSlot).toBe('bottom');
+    vi.advanceTimersByTime(600);
+    expect(useMascotStore.getState().bouncingSlot).toBeNull();
+  });
+
+  it('unequips a single slot without touching the others', () => {
+    useMascotStore.getState().equipProduct(makeProduct({ _id: 'hoodie_1', category: 'hoodies' }));
+    useMascotStore.getState().equipProduct(makeProduct({ _id: 'cargo', category: 'bottoms' }));
+    useMascotStore.getState().unequipSlot('top');
+    const { equipped } = useMascotStore.getState();
+    expect(equipped.top).toBeNull();
+    expect(equipped.bottom?._id).toBe('cargo');
   });
 });
 

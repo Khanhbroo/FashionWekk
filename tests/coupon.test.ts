@@ -1,201 +1,131 @@
-import { describe, it, expect } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
+import mongoose from 'mongoose';
 
-export interface CouponRule {
-  code: string;
-  discountPercent: number;
-  fixedDiscount?: number;
-  isFreeShipping?: boolean;
-  minOrderValue: number;
-  expiryDate: string; // ISO date
-  usageLimit: number; // 0 = unlimited
-  timesUsed: number;
-  isActive: boolean;
-}
+vi.mock('../server/models/Coupon', () => ({
+  default: { findOne: vi.fn() },
+}));
 
-export interface CouponValidationResult {
-  valid: boolean;
-  message?: string;
-  discountAmount: number;
-  isFreeShipping: boolean;
-}
+import Coupon from '../server/models/Coupon';
+import { validateCoupon } from '../server/controllers/couponController';
 
-export const validateCouponRules = (
-  coupon: CouponRule,
-  cartSubtotal: number,
-  now: Date = new Date()
-): CouponValidationResult => {
-  if (!coupon.isActive) {
-    return {
-      valid: false,
-      message: `Coupon '${coupon.code}' is currently deactivated`,
-      discountAmount: 0,
-      isFreeShipping: false,
-    };
-  }
+const findOne = (Coupon as any).findOne as ReturnType<typeof vi.fn>;
 
-  const expiry = new Date(coupon.expiryDate);
-  if (expiry < now) {
-    return {
-      valid: false,
-      message: `Coupon '${coupon.code}' has expired`,
-      discountAmount: 0,
-      isFreeShipping: false,
-    };
-  }
+let readyState = 0;
+Object.defineProperty(mongoose.connection, 'readyState', {
+  get: () => readyState,
+  configurable: true,
+});
 
-  if (coupon.usageLimit > 0 && coupon.timesUsed >= coupon.usageLimit) {
-    return {
-      valid: false,
-      message: `Coupon '${coupon.code}' has reached its maximum redemption limit`,
-      discountAmount: 0,
-      isFreeShipping: false,
-    };
-  }
-
-  if (cartSubtotal < coupon.minOrderValue) {
-    return {
-      valid: false,
-      message: `Order must be at least $${coupon.minOrderValue.toFixed(2)} to use this coupon`,
-      discountAmount: 0,
-      isFreeShipping: false,
-    };
-  }
-
-  let discountAmount = 0;
-  if (coupon.discountPercent > 0) {
-    discountAmount = (cartSubtotal * coupon.discountPercent) / 100;
-  } else if (coupon.fixedDiscount && coupon.fixedDiscount > 0) {
-    discountAmount = Math.min(coupon.fixedDiscount, cartSubtotal);
-  }
-
-  return {
-    valid: true,
-    discountAmount: Math.round(discountAmount * 100) / 100,
-    isFreeShipping: Boolean(coupon.isFreeShipping),
+const callValidate = async (body: Record<string, unknown>) => {
+  const result: { status: number; body: any } = { status: 200, body: null };
+  const res: any = {
+    status(code: number) {
+      result.status = code;
+      return res;
+    },
+    json(payload: unknown) {
+      result.body = payload;
+      return res;
+    },
   };
+  await validateCoupon({ body } as any, res);
+  return result;
 };
 
-describe('Atelier Coupon Validation & Calculation Engine', () => {
-  const baseDate = new Date('2026-11-05T00:00:00Z');
+const dbCoupon = (overrides: Record<string, unknown> = {}) => ({
+  _id: 'db_coupon',
+  code: 'DBCODE',
+  discountPercent: 0,
+  fixedDiscount: 0,
+  isFreeShipping: false,
+  minOrderValue: 0,
+  description: 'database coupon',
+  expiryDate: new Date('2999-12-31'),
+  usageLimit: 0,
+  timesUsed: 0,
+  isActive: true,
+  ...overrides,
+});
 
-  it('validates a standard active percentage coupon successfully', () => {
-    const coupon: CouponRule = {
-      code: 'TOON20',
-      discountPercent: 20,
-      minOrderValue: 50,
-      expiryDate: '2026-12-31T23:59:59Z',
-      usageLimit: 100,
-      timesUsed: 10,
-      isActive: true,
-    };
-
-    const res = validateCouponRules(coupon, 100, baseDate);
-    expect(res.valid).toBe(true);
-    expect(res.discountAmount).toBe(20);
-    expect(res.isFreeShipping).toBe(false);
+describe('validateCoupon with the in-memory fallback catalog', () => {
+  beforeEach(() => {
+    readyState = 0;
+    findOne.mockReset();
   });
 
-  it('rejects an expired coupon code', () => {
-    const coupon: CouponRule = {
-      code: 'VINTAGE50',
-      discountPercent: 50,
-      minOrderValue: 0,
-      expiryDate: '2026-10-01T00:00:00Z', // Past date relative to baseDate
-      usageLimit: 0,
-      timesUsed: 5,
-      isActive: true,
-    };
-
-    const res = validateCouponRules(coupon, 100, baseDate);
-    expect(res.valid).toBe(false);
-    expect(res.message).toContain('has expired');
+  it('requires a coupon code', async () => {
+    const res = await callValidate({ cartTotal: 100 });
+    expect(res.status).toBe(400);
+    expect(res.body.message).toContain('required');
   });
 
-  it('rejects a coupon when order subtotal is below minimum spend threshold', () => {
-    const coupon: CouponRule = {
-      code: 'VIPDROP',
-      discountPercent: 25,
-      minOrderValue: 120,
-      expiryDate: '2026-12-31T23:59:59Z',
-      usageLimit: 0,
-      timesUsed: 0,
-      isActive: true,
-    };
-
-    const res = validateCouponRules(coupon, 85, baseDate);
-    expect(res.valid).toBe(false);
-    expect(res.message).toContain('at least $120.00');
+  it('returns 404 for an unknown code', async () => {
+    const res = await callValidate({ code: 'NOPE', cartTotal: 100 });
+    expect(res.status).toBe(404);
+    expect(res.body.message).toContain('does not exist');
   });
 
-  it('rejects a coupon that has exhausted its usage limit', () => {
-    const coupon: CouponRule = {
-      code: 'FLASH50LIMIT',
-      discountPercent: 30,
-      minOrderValue: 0,
-      expiryDate: '2026-12-31T23:59:59Z',
-      usageLimit: 50,
-      timesUsed: 50,
-      isActive: true,
-    };
-
-    const res = validateCouponRules(coupon, 100, baseDate);
-    expect(res.valid).toBe(false);
-    expect(res.message).toContain('maximum redemption limit');
+  it('normalizes the code and applies a percentage discount', async () => {
+    const res = await callValidate({ code: '  toon10 ', cartTotal: 100 });
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.code).toBe('TOON10');
+    expect(res.body.data.discountAmount).toBe(10);
   });
 
-  it('calculates fixed dollar discounts capped at cart subtotal', () => {
-    const coupon: CouponRule = {
-      code: 'CASH25',
-      discountPercent: 0,
-      fixedDiscount: 25,
-      minOrderValue: 0,
-      expiryDate: '2026-12-31T23:59:59Z',
-      usageLimit: 0,
-      timesUsed: 0,
-      isActive: true,
-    };
-
-    const resNormal = validateCouponRules(coupon, 80, baseDate);
-    expect(resNormal.valid).toBe(true);
-    expect(resNormal.discountAmount).toBe(25);
-
-    // If cart total is less than fixed discount ($20 < $25), discount is capped at $20
-    const resCapped = validateCouponRules(coupon, 20, baseDate);
-    expect(resCapped.valid).toBe(true);
-    expect(resCapped.discountAmount).toBe(20);
+  it('rejects a coupon when the cart is below its minimum order value', async () => {
+    const res = await callValidate({ code: 'CYBER20', cartTotal: 100 });
+    expect(res.status).toBe(400);
+    expect(res.body.message).toContain('at least $120.00');
   });
 
-  it('correctly enables zero freight worldwide for free shipping vouchers', () => {
-    const coupon: CouponRule = {
-      code: 'FREESHIPGLOBAL',
-      discountPercent: 0,
-      isFreeShipping: true,
-      minOrderValue: 40,
-      expiryDate: '2026-12-31T23:59:59Z',
-      usageLimit: 0,
-      timesUsed: 0,
-      isActive: true,
-    };
+  it('accepts a free shipping coupon without a money discount', async () => {
+    const res = await callValidate({ code: 'FREESHIP', cartTotal: 80 });
+    expect(res.status).toBe(200);
+    expect(res.body.data.isFreeShipping).toBe(true);
+    expect(res.body.data.discountAmount).toBe(0);
+  });
+});
 
-    const res = validateCouponRules(coupon, 50, baseDate);
-    expect(res.valid).toBe(true);
-    expect(res.isFreeShipping).toBe(true);
-    expect(res.discountAmount).toBe(0);
+describe('validateCoupon with database coupons', () => {
+  beforeEach(() => {
+    readyState = 1;
+    findOne.mockReset();
   });
 
-  it('rejects deactivated coupons', () => {
-    const coupon: CouponRule = {
-      code: 'PAUSEDCODE',
-      discountPercent: 15,
-      minOrderValue: 0,
-      expiryDate: '2026-12-31T23:59:59Z',
-      usageLimit: 0,
-      timesUsed: 0,
-      isActive: false,
-    };
+  it('rejects an expired coupon', async () => {
+    findOne.mockResolvedValue(dbCoupon({ discountPercent: 50, expiryDate: new Date('2020-01-01') }));
+    const res = await callValidate({ code: 'DBCODE', cartTotal: 100 });
+    expect(res.status).toBe(400);
+    expect(res.body.message).toContain('expired');
+  });
 
-    const res = validateCouponRules(coupon, 100, baseDate);
-    expect(res.valid).toBe(false);
-    expect(res.message).toContain('deactivated');
+  it('rejects a deactivated coupon', async () => {
+    findOne.mockResolvedValue(dbCoupon({ discountPercent: 15, isActive: false }));
+    const res = await callValidate({ code: 'DBCODE', cartTotal: 100 });
+    expect(res.status).toBe(400);
+    expect(res.body.message).toContain('deactivated');
+  });
+
+  it('rejects a coupon that reached its usage limit', async () => {
+    findOne.mockResolvedValue(dbCoupon({ discountPercent: 30, usageLimit: 50, timesUsed: 50 }));
+    const res = await callValidate({ code: 'DBCODE', cartTotal: 100 });
+    expect(res.status).toBe(400);
+    expect(res.body.message).toContain('maximum redemption limit');
+  });
+
+  it('caps a fixed discount at the cart total', async () => {
+    findOne.mockResolvedValue(dbCoupon({ fixedDiscount: 25 }));
+    const normal = await callValidate({ code: 'DBCODE', cartTotal: 80 });
+    expect(normal.body.data.discountAmount).toBe(25);
+    const capped = await callValidate({ code: 'DBCODE', cartTotal: 20 });
+    expect(capped.body.data.discountAmount).toBe(20);
+  });
+
+  it('falls back to the in-memory catalog when the database lookup fails', async () => {
+    findOne.mockRejectedValue(new Error('connection lost'));
+    const res = await callValidate({ code: 'TOON10', cartTotal: 100 });
+    expect(res.status).toBe(200);
+    expect(res.body.data.discountAmount).toBe(10);
   });
 });

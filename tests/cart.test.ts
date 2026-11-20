@@ -1,85 +1,132 @@
-import { describe, it, expect } from 'vitest';
+import './helpers/memoryStorage';
+import { beforeEach, describe, expect, it } from 'vitest';
+import { useCartStore } from '../src/stores/cartStore';
+import type { CartItem, CouponData } from '../src/types';
 
-export interface CartItem {
-  id: string;
-  title: string;
-  price: number;
-  quantity: number;
-  size: string;
-  color: string;
-}
+const makeItem = (overrides: Partial<CartItem> = {}): Omit<CartItem, 'quantity'> & { quantity?: number } => ({
+  productId: 'p1',
+  title: 'Tee',
+  price: 45,
+  size: 'L',
+  color: 'Black',
+  image: '/tee.jpg',
+  ...overrides,
+});
 
-export const calculateCartTotals = (
-  items: CartItem[],
-  couponDiscountPercent: number = 0,
-  isFreeShippingCoupon: boolean = false
-) => {
-  const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const discount = Math.round(((subtotal * couponDiscountPercent) / 100) * 100) / 100;
-  const freeshipThreshold = 75;
-  const eligibleForFreeShip = subtotal >= freeshipThreshold || isFreeShippingCoupon;
-  const shippingFee = items.length === 0 ? 0 : eligibleForFreeShip ? 0 : 9.99;
-  const total = Math.max(0, Math.round((subtotal - discount + shippingFee) * 100) / 100);
+const makeCoupon = (overrides: Partial<CouponData> = {}): CouponData => ({
+  code: 'TEST',
+  discountPercent: 0,
+  discountAmount: 0,
+  description: 'test coupon',
+  ...overrides,
+});
 
-  return {
-    subtotal,
-    discount,
-    shippingFee,
-    total,
-    eligibleForFreeShip,
-    amountNeededForFreeship: Math.max(0, freeshipThreshold - subtotal),
-  };
-};
-
-describe('cart calculations', () => {
-  it('should calculate empty cart totals correctly', () => {
-    const res = calculateCartTotals([]);
-    expect(res.subtotal).toBe(0);
-    expect(res.shippingFee).toBe(0);
-    expect(res.total).toBe(0);
-    expect(res.amountNeededForFreeship).toBe(75);
+describe('cart store calculations', () => {
+  beforeEach(() => {
+    useCartStore.setState({ items: [], coupon: null, isOpen: false, lastAddedItem: null });
   });
 
-  it('should charge shipping fee if below $75 threshold', () => {
-    const items: CartItem[] = [
-      { id: '1', title: 'Tee', price: 45, quantity: 1, size: 'L', color: 'Black' },
-    ];
-    const res = calculateCartTotals(items);
-    expect(res.subtotal).toBe(45);
-    expect(res.shippingFee).toBe(9.99);
-    expect(res.total).toBe(54.99);
-    expect(res.amountNeededForFreeship).toBe(30);
+  it('returns zero totals for an empty cart', () => {
+    const cart = useCartStore.getState();
+    expect(cart.getSubtotal()).toBe(0);
+    expect(cart.getShippingFee()).toBe(0);
+    expect(cart.getTotal()).toBe(0);
+    expect(cart.getFreeshipRemaining()).toBe(75);
   });
 
-  it('should grant free shipping if subtotal >= $75', () => {
-    const items: CartItem[] = [
-      { id: '1', title: 'Heavy Hoodie', price: 85, quantity: 1, size: 'L', color: 'Black' },
-    ];
-    const res = calculateCartTotals(items);
-    expect(res.subtotal).toBe(85);
-    expect(res.shippingFee).toBe(0);
-    expect(res.total).toBe(85);
-    expect(res.amountNeededForFreeship).toBe(0);
-    expect(res.eligibleForFreeShip).toBe(true);
+  it('charges shipping below the 75 dollar threshold', () => {
+    useCartStore.getState().addItem(makeItem({ price: 45 }));
+    const cart = useCartStore.getState();
+    expect(cart.getSubtotal()).toBe(45);
+    expect(cart.getShippingFee()).toBe(9.99);
+    expect(cart.getTotal()).toBe(54.99);
+    expect(cart.getFreeshipRemaining()).toBe(30);
   });
 
-  it('should apply discount coupon accurately', () => {
-    const items: CartItem[] = [
-      { id: '1', title: 'Heavy Hoodie', price: 100, quantity: 1, size: 'L', color: 'Black' },
-    ];
-    const res = calculateCartTotals(items, 15);
-    expect(res.subtotal).toBe(100);
-    expect(res.discount).toBe(15);
-    expect(res.shippingFee).toBe(0);
-    expect(res.total).toBe(85);
+  it('grants free shipping at or above the threshold', () => {
+    useCartStore.getState().addItem(makeItem({ price: 85 }));
+    const cart = useCartStore.getState();
+    expect(cart.getShippingFee()).toBe(0);
+    expect(cart.getTotal()).toBe(85);
+    expect(cart.getFreeshipRemaining()).toBe(0);
   });
 
-  it('should respect free shipping coupon even when below threshold', () => {
-    const items: CartItem[] = [
-      { id: '1', title: 'Cap', price: 30, quantity: 1, size: 'One Size', color: 'Black' },
-    ];
-    const res = calculateCartTotals(items, 0, true);
-    expect(res.shippingFee).toBe(0);
-    expect(res.total).toBe(30);
+  it('treats exactly 75 dollars as eligible for free shipping and 74.99 as not', () => {
+    useCartStore.getState().addItem(makeItem({ price: 75 }));
+    expect(useCartStore.getState().getShippingFee()).toBe(0);
+
+    useCartStore.setState({ items: [], coupon: null });
+    useCartStore.getState().addItem(makeItem({ price: 74.99 }));
+    expect(useCartStore.getState().getShippingFee()).toBe(9.99);
+  });
+
+  it('applies a percentage coupon', () => {
+    useCartStore.getState().addItem(makeItem({ price: 100 }));
+    useCartStore.getState().setCoupon(makeCoupon({ discountPercent: 15 }));
+    const cart = useCartStore.getState();
+    expect(cart.getDiscountAmount()).toBe(15);
+    expect(cart.getTotal()).toBe(85);
+  });
+
+  it('ignores a coupon when the subtotal is below its minimum order value', () => {
+    useCartStore.getState().addItem(makeItem({ price: 50 }));
+    useCartStore.getState().setCoupon(makeCoupon({ discountPercent: 20, minOrderValue: 120 }));
+    expect(useCartStore.getState().getDiscountAmount()).toBe(0);
+  });
+
+  it('caps a fixed discount at the subtotal', () => {
+    useCartStore.getState().addItem(makeItem({ price: 20 }));
+    useCartStore.getState().setCoupon(makeCoupon({ fixedDiscount: 25 }));
+    expect(useCartStore.getState().getDiscountAmount()).toBe(20);
+  });
+
+  it('honours a free shipping coupon below the threshold when its minimum is met', () => {
+    useCartStore.getState().addItem(makeItem({ price: 30 }));
+    useCartStore.getState().setCoupon(makeCoupon({ isFreeShipping: true, minOrderValue: 0 }));
+    const cart = useCartStore.getState();
+    expect(cart.getShippingFee()).toBe(0);
+    expect(cart.getTotal()).toBe(30);
+  });
+
+  it('does not honour a free shipping coupon when the minimum order value is not met', () => {
+    useCartStore.getState().addItem(makeItem({ price: 30 }));
+    useCartStore.getState().setCoupon(makeCoupon({ isFreeShipping: true, minOrderValue: 50 }));
+    expect(useCartStore.getState().getShippingFee()).toBe(9.99);
+  });
+});
+
+describe('cart store item management', () => {
+  beforeEach(() => {
+    useCartStore.setState({ items: [], coupon: null, isOpen: false, lastAddedItem: null });
+  });
+
+  it('merges identical product, size and color lines into one quantity', () => {
+    useCartStore.getState().addItem(makeItem());
+    useCartStore.getState().addItem(makeItem({ quantity: 2 }));
+    const { items, getItemCount } = useCartStore.getState();
+    expect(items).toHaveLength(1);
+    expect(items[0].quantity).toBe(3);
+    expect(getItemCount()).toBe(3);
+  });
+
+  it('keeps different sizes as separate lines', () => {
+    useCartStore.getState().addItem(makeItem({ size: 'M' }));
+    useCartStore.getState().addItem(makeItem({ size: 'L' }));
+    expect(useCartStore.getState().items).toHaveLength(2);
+  });
+
+  it('removes a line when its quantity is updated to zero', () => {
+    useCartStore.getState().addItem(makeItem());
+    useCartStore.getState().updateQuantity('p1', 'L', 'Black', 0);
+    expect(useCartStore.getState().items).toHaveLength(0);
+  });
+
+  it('clears items and coupon together', () => {
+    useCartStore.getState().addItem(makeItem());
+    useCartStore.getState().setCoupon(makeCoupon({ discountPercent: 10 }));
+    useCartStore.getState().clearCart();
+    const { items, coupon } = useCartStore.getState();
+    expect(items).toHaveLength(0);
+    expect(coupon).toBeNull();
   });
 });
