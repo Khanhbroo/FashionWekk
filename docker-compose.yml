@@ -1,0 +1,61 @@
+# Local development: MongoDB + hot reload app
+#   docker compose --profile dev up --build
+# Production like stack: MongoDB + API + nginx web on port 8080
+#   docker compose --profile prod up --build
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    profiles: ["dev"]
+    build:
+      context: .
+      target: dev
+    environment:
+      PORT: 5000
+      MONGODB_URI: mongodb://mongo:27017/fashionwekk
+    ports:
+      - "5173:5173"
+      - "5000:5000"
+    volumes:
+      - .:/app
+      # Keep the container node_modules instead of the host copy
+      - /app/node_modules
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  api:
+    profiles: ["prod"]
+    build:
+      context: .
+      target: api
+    restart: unless-stopped
+    environment:
+      PORT: 5000
+      MONGODB_URI: mongodb://mongo:27017/fashionwekk
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  web:
+    profiles: ["prod"]
+    build:
+      context: .
+      target: web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+
+volumes:
+  mongo-data:
